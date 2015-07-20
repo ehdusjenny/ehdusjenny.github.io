@@ -284,6 +284,8 @@ a, a:hover, a:active, a:visited {
 }
 
 #map {
+	height:400px;
+	width:380px;
 	float: left;
 	margin-left: 100px;
 	text-align: center;
