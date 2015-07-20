@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+
+        <title>Restaurant Haru Hana</title>
+        <meta name="description" content="Haru Hana is a Korean restaurant located in Montreal, Quebec. We bring to your table flavours authentic to our roots, yet unique to our own.">
+        <meta name="author" content="DoYeon Kim">
+        <meta http-equiv="content-language" content="en"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css"/>
+        <link rel="stylesheet" type="text/css" href="audi-font/style.css"/>
+        <link rel="stylesheet" type="text/css" href="generica-font/style.css"/>
+        <link rel="stylesheet" type="text/css" href="custom.css"/>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="SlidesJS/Slides-SlidesJS-3/source/jquery.slides.min.js"></script>
+        <script>
+            $(function(){
+                $("#slides").slidesjs({
+                    width: 400,
+                    height: 600,
+                    play: {
+                        active: false,
+                            // [boolean] Generate the play and stop buttons.
+                        effect: "fade",
+                            // [string] Can be either "slide" or "fade".
+                        interval: 4000,
+                            // [number] Time spent on each slide in milliseconds.
+                        auto: true,
+                            // [boolean] Start playing the slideshow on load.
+                        swap: false,
+                            // [boolean] show/hide stop and play buttons
+                        pauseOnHover: true,
+                            // [boolean] pause a playing slideshow on hover
+                    }
+                });
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <!-- Begin NavBar -->
+
+        <ul class="nav">
+            <a href="#"><div class="logo"><b>HARU HANA</b></div></a>
+            <li><a href="#" style="margin-left: 140px"><i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="menu.html"><i class="fa fa-cutlery"></i>MENU</a></li>
+            <li><a href="contact-us.html"><i class="fa fa-train"></i>INFO</a></li>
+        </ul>
+
+        <div class="center-piece">
+            <div class="text-block">
+                A TASTE OF 
+                <div style="color: red; font-size: 50px; text-align: center; padding-right: 10px">
+                    AUTHENTIC,
+                </div>
+                <div style="text-align: center">
+                    YET
+                </div>
+                <div style="color: red; font-size: 110px">
+                    INNOVATIVE
+                </div>
+                <div style="float: right; padding-right: 10px">
+                    KOREAN CUISINE.
+                </div>
+            </div>
+
+            <div id="slideshow">
+                <div id="slides">
+                    <img src="sliders.jpg">
+                    <img src="yujacha.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">  
+            <ul>    
+                <li><b>LOCATION</b> &nbsp; 912 boul. Maisonneuve East, Montreal, QC
+                    <br>
+                    <br>
+                    <b>TEL</b> &nbsp; 514-903-5005
+                    <br>
+                    <br>
+                    <b>E-MAIL</b> &nbsp; restaurantharuhana@gmail.com</li>
+                <div class="social-networks">
+                    <li><div style="outline: 2px dotted white; outline-offset: 10px; font-size: 20px">CONNECT WITH
+                        <br>
+                        US FOR UPDATES</div>
+                        <br>
+                        <ul>
+                            <li style="margin-right: 20px"><a href="https://www.facebook.com/restaurantharuhana"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
+                            <li style="margin-right: 20px"><a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
+                            <li style="margin-right: 8px"><a href="#"><i class="fa fa-instagram fa-fw fa-2x"></i></a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+
+        </div>
+    </div>
+    </body>
+
+    <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+
+</html>
