@@ -6,16 +6,6 @@ a, a:hover, a:active, a:visited {
     text-decoration:none;
 }
 
-.logo {
-    text-align: left;
-    margin-left: 150px;
-    font-family: "Audi Type Normal", Verdana, sans-serif;
-    color: white;
-    font-size: 70px;
-    display: inline-block;
-    text-decoration: none;
-}
-
 .nav {
 	background-color: black;
 	border-bottom: 4px dotted rgba(255, 255, 255, 0.8);
@@ -24,6 +14,17 @@ a, a:hover, a:active, a:visited {
 	position: relative;
 	padding-top: 110px;
 	display: inline-block;
+}
+
+
+.logo {
+    text-align: left;
+    margin-left: 100px;
+    font-family: "Audi Type Normal", Verdana, sans-serif;
+    color: white;
+    font-size: 70px;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .nav li {
@@ -38,7 +39,6 @@ a, a:hover, a:active, a:visited {
 	margin-right: 50px;
 	display: inline;
 	float: bottom;
-	background-color: transparent;
 }
 
 .nav li a i {
