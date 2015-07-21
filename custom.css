@@ -252,17 +252,16 @@ a, a:hover, a:active, a:visited {
 
 /* START OF CONTACT-US*/
 #info {
-	width: 100%;
+	background-color: white;
+	width: 1150px;
 	height: 510px;
 	margin: auto;
 	margin-top: 120px;
-	background: white;
 }
 
 #contact {
 	float: left;
 	padding: 20px;
-	padding-left: 100px;
 	padding-top: 60px;
 	text-align: center;
 }
