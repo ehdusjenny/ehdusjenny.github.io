@@ -36,11 +36,11 @@ a, a:hover, a:active, a:visited {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 15px;
 	color: white;
-	margin-right: 0px;
+	margin-right: 50px;
 }
 
 .home-element {
-	margin-left: 350px;
+	margin-left: 400px;
 }
 
 @media (max-width: 768px) {
