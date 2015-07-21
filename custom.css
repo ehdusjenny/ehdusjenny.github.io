@@ -41,6 +41,12 @@ a, a:hover, a:active, a:visited {
 	float: bottom;
 }
 
+@media (max-width: 768px) {
+	.nav li a {
+		background-color: black;
+	}
+}
+
 .nav li a i {
 	margin-right: 10px;
 }
