@@ -19,7 +19,7 @@ a, a:hover, a:active, a:visited {
 
 .logo {
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 80px;
     font-family: "Audi Type Normal", Verdana, sans-serif;
     color: white;
     font-size: 70px;
@@ -40,10 +40,10 @@ a, a:hover, a:active, a:visited {
 }
 
 .home-element {
-	margin-left: 400px;
+	margin-left: 380px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
 	.nav li a {
 		margin-right: 0px;
@@ -60,7 +60,7 @@ a, a:hover, a:active, a:visited {
 	}
 
 	.home-element {
-		margin: 50px;
+		margin: 80px;
 	}
 
 }
