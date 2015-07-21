@@ -18,32 +18,58 @@ a, a:hover, a:active, a:visited {
 
 
 .logo {
-    text-align: left;
+    display: inline-block;
     margin-left: 100px;
     font-family: "Audi Type Normal", Verdana, sans-serif;
     color: white;
     font-size: 70px;
-    display: inline-block;
     text-decoration: none;
 }
 
 .nav li {
-	text-align: right;
 	display: inline-block;
+	text-align: right;
 }
 
 .nav li a, .nav li a:visited, .nav li a:link {
+	display: inline-block;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 15px;
 	color: white;
-	margin-right: 50px;
-	display: inline;
-	float: bottom;
+	margin-right: 0px;
+}
+
+.home-element {
+	margin-left: 300px;
 }
 
 @media (max-width: 768px) {
+
 	.nav li a {
+		margin-right: 0px;
+	}
+
+	.nav li a span {
 		background-color: black;
+		padding: 8px;
+		margin: auto;
+	}
+
+	.nav li {
+		margin: auto;
+	}
+
+	.home-element {
+		margin: 50px;
+	}
+
+}
+
+
+@media (max-width: 500px) {
+
+	.nav {
+		padding-top: 0px;
 	}
 }
 
@@ -128,6 +154,19 @@ a, a:hover, a:active, a:visited {
 		width: 500px;
 		height: 475px;
 	}
+
+	@media (max-width: 768px) {
+
+	#text-block {
+		display: block;
+	}
+
+	#slideshow {
+		display: block;
+	}
+
+}
+
 
 /* END OF INDEX */
 
