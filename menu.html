@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width; maximum-scale=1; minimum-scale=1;" />
 
         <title>Restaurant Haru Hana</title>
         <meta name="description" content="Haru Hana is a Korean restaurant located in Montreal, Quebec. We bring to your table flavours authentic to our roots, yet unique to our own.">
@@ -25,20 +25,20 @@
         <!-- Begin NavBar -->
 
         <ul class="nav">
-            <a href="index.html"><div class="logo"><b>HARU HANA</b></div></a>
-            <li><a href="index.html" style="padding-left: 300px"><i class="fa fa-home"></i>HOME</a></li>
-            <li><a href="#"><i class="fa fa-cutlery"></i>MENU</a></li>
+            <a href="#"><div class="logo"><b>HARU HANA</b></div></a>
             <li><a href="contact-us.html"><i class="fa fa-train"></i>INFO</a></li>
+            <li><a href="menu.html"><i class="fa fa-cutlery"></i>MENU</a></li>
+            <li><a href="#"><i class="fa fa-home"></i>HOME</a></li>
         </ul>
 
         <ul class="menu-category">
             <span><b>
-                <li><i class="fa fa-caret-right" style="padding-left: 15px"></i><a onclick="smallDishes()">SMALL DISHES</a></li>
-                <li><i class="fa fa-caret-right"></i><a onclick="jeonAndStew()">JEON AND STEW</a></li>
-                <li><i class="fa fa-caret-right"></i><a onclick="ramen()">RAMEN</a></li>
-                <li><i class="fa fa-caret-right"></i><a onclick="tteokbokki()">TTEOKBOKKI</a></li>
-                <li><i class="fa fa-caret-right"></i><a onclick="haruhanaMeals()">HARUHANA MEALS</a></li>
-                <li><i class="fa fa-caret-right"></i><a onclick="dessertsAndDrinks()">DESSERTS & DRINKS</a></li>
+                <li><a onclick="smallDishes()"><i class="fa fa-caret-right" style="padding-left: 3px"></i>SMALL DISHES</a></li>
+                <li><a onclick="jeonAndStew()"><i class="fa fa-caret-right"></i>JEON AND STEW</a></li>
+                <li><a onclick="ramen()"><i class="fa fa-caret-right"></i>RAMEN</a></li>
+                <li><a onclick="tteokbokki()"><i class="fa fa-caret-right"></i>TTEOKBOKKI</a></li>
+                <li><a onclick="haruhanaMeals()"><i class="fa fa-caret-right"></i>HARUHANA MEALS</a></li>
+                <li><a onclick="dessertsAndDrinks()"><i class="fa fa-caret-right"></i>DESSERTS & DRINKS</a></li>
             </b></span>
         </ul>
 
@@ -55,27 +55,26 @@
                     <br>
                     <b>E-MAIL</b> &nbsp; restaurantharuhana@gmail.com</li>
                 <div class="social-networks">
-                    <li><div style="outline: 2px dotted white; outline-offset: 10px; font-size: 20px">CONNECT WITH
+                    <div class="connect">CONNECT WITH
                         <br>
                         US FOR UPDATES</div>
                         <br>
                         <ul>
-                            <li style="margin-right: 20px"><a href="https://www.facebook.com/restaurantharuhana"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
+                            <li style="margin-right: 20px; margin-left: -30px"><a href="https://www.facebook.com/restaurantharuhana"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
                             <li style="margin-right: 20px"><a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
-                            <li style="margin-right: 8px"><a href="#"><i class="fa fa-instagram fa-fw fa-2x"></i></a></li>
+                            <li style="margin-right: 10px"><a href="#"><i class="fa fa-instagram fa-fw fa-2x"></i></a></li>
                         </ul>
-                    </li>
-                </div>
+                    </div>
+                </li>
             </ul>
         </div>
-    </div>
 
         <script>
             window.onload = smallDishes();
 
             function smallDishes() {
                 document.getElementById('menu').innerHTML = 
-                    '<div class="title"><b>APPETIZER</b><hr></div><table align="center"><tr><td><img src="menu-images/crispychicken.jpg" class="menu-pics"/></td><td><img src="menu-images/dumplings.jpg" class="menu-pics"/></td><td><img src="menu-images/tteokbokkisoup.jpg" class="menu-pics"/></td></tr><tr><td class="menu-title">Crispy Chicken (Tang Su Yuk)<br></td><td class="menu-title">Mandu Tuikim<br></td><td class="menu-title">Tteokbokki Soup with mandu<br></td></tr><tr><td>In sweet and sour sauce.<br><br></td><td>Chicken or vegetarian dumplings.<br><br></td><td>Spicy rice cake soup with mandu.<br><br></td></tr><tr><td>$5.95<br><br></td><td>$5<br><br></td><td>$5<br><br></td></tr></table><table align="center"><tr><td><img src="menu-images/odensoup.jpg" class="menu-pics"/></td><td><img src="menu-images/japchae.jpg" class="menu-pics"/></td></tr><tr><td class="menu-title">Oden and Mussels Soup<br></td><td class="menu-title">Japchae<br></td></tr><tr><td>*Oden is fishcake.<br><br></td><td>Sweet potato noodles with beef and vegetables.<br><br></td></tr><tr><td>$5.5<br><br></td><td>$7<br><br></td></tr></table><div class="title"><b>SLIDERS</b><hr></div><table align="center"><tr><td><img src="menu-images/beefslider.jpg" class="menu-pics"/></td><td><img src="menu-images/shrimpslider.jpg" class="menu-pic"/></td></tr><tr><td class="menu-title">Beef Sliders<br></td><td class="menu-title">Shrimp Sliders<br></td></tr><tr><td>Two beef sliders with coleslaw, shallots, and radish.<br><br></td><td>Two shrimp sliders with spicy mayo, shallots, and radish.<br><br></td></tr><tr><td>$5<br><br></td><td>$5.5<br><br></td></tr></table><div class="title"><b>KIMBAP</b><hr></div><table align="center"><tr><td><img src="menu-images/samgyupsalkimbap.jpg" class="menu-pics"/></td><td><img src="menu-images/chickenkatsukimbap.jpg" class="menu-pics"/></td></tr><tr><td class="menu-title">Samgyupsal (pork belly) and Kimchi<br></td><td class="menu-title">Chicken Katsu<br></td></tr><tr><td>$6.95<br><br></td><td>$6.95<br><br></td></tr></table><div class="title"><b>BUN</b><hr></div><table align="center"><tr><td><img src="menu-images/porkbellybun.jpg" class="menu-pics"/></td></tr><tr><td class="menu-title">Pork Belly<br></td></tr><tr><td>With hoisin sauce, pickles, and green onions.<br><br></td></tr><tr><td>$5<br><br></td></tr></table>';
+                    '<div class="title"><b>APPETIZER</b><hr></div><table align="center"><tr><td><img src="menu-images/crispychicken.jpg" class="menu-pics"/></td><td><img src="menu-images/dumplings.jpg" class="menu-pics"/></td><td><img src="menu-images/tteokbokkisoup.jpg" class="menu-pics"/></td></tr><tr><td class="menu-title">Crispy Chicken (Tang Su Yuk)<br></td><td class="menu-title">Mandu Tuikim<br></td><td class="menu-title">Tteokbokki Soup with mandu<br></td></tr><tr><td>In sweet and sour sauce.<br><br></td><td>Chicken or vegetarian dumplings.<br><br></td><td>Spicy rice cake soup with mandu.<br><br></td></tr><tr><td>$5.95<br><br></td><td>$5<br><br></td><td>$5<br><br></td></tr></table><table align="center"><tr><td><img src="menu-images/odensoup.jpg" class="menu-pics"/></td><td><img src="menu-images/japchae.jpg" class="menu-pics"/></td></tr><tr><td class="menu-title">Oden and Mussels Soup<br></td><td class="menu-title">Japchae<br></td></tr><tr><td>*Oden is fishcake.<br><br></td><td>Sweet potato noodles<br> with beef<br> and vegetables.<br><br></td></tr><tr><td>$5.5<br><br></td><td>$7<br><br></td></tr></table><div class="title"><b>SLIDERS</b><hr></div><table align="center"><tr><td><img src="menu-images/beefslider.jpg" class="menu-pics"/></td><td><img src="menu-images/shrimpslider.jpg" class="menu-pics"/></td></tr><tr><td class="menu-title">Beef Sliders<br></td><td class="menu-title">Shrimp Sliders<br></td></tr><tr><td>Two beef sliders with coleslaw, shallots, and radish.<br><br></td><td>Two shrimp sliders with spicy mayo, shallots, and radish.<br><br></td></tr><tr><td>$5<br><br></td><td>$5.5<br><br></td></tr></table><div class="title"><b>KIMBAP</b><hr></div><table align="center"><tr><td><img src="menu-images/samgyupsalkimbap.jpg" class="menu-pics"/></td><td><img src="menu-images/chickenkatsukimbap.jpg" class="menu-pics"/></td></tr><tr><td class="menu-title">Samgyupsal (pork belly)<br> and Kimchi<br></td><td class="menu-title">Chicken Katsu<br></td></tr><tr><td>$6.95<br><br></td><td>$6.95<br><br></td></tr></table><div class="title"><b>BUN</b><hr></div><table align="center"><tr><td><img src="menu-images/porkbellybun.jpg" class="menu-pics"/></td></tr><tr><td class="menu-title">Pork Belly<br></td></tr><tr><td>With hoisin sauce, pickles, and green onions.<br><br></td></tr><tr><td>$5<br><br></td></tr></table>';
             }
 
             function jeonAndStew() {
@@ -90,12 +89,12 @@
 
             function tteokbokki() {
                 document.getElementById('menu').innerHTML = 
-                    "<div class='title'><b>Tteokbokki</b><hr></div><table align='center'><tr>Tteokbokki with ... <td><img src='menu-images/cheesefishcake.jpg' class='menu-pics'/></td><td><img src='menu-images/noodledumplingfishcake.jpg' class='menu-pics'/></td><td><img src='menu-images/chickenkatsuwithcheese.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Cheese and Fishcake<br></td><td class='menu-title'>Noodles, Dumplings, and Fishcakes<br></td><td class='menu-title'>Chicken Katsu and Cheese<br></td></tr><tr><td>$8<br><br></td><td>$8<br><br></td><td>$10<br><br></td> </tr></table>";
+                    "<div class='title'><b>TTEOKBOKKI</b><hr></div><table align='center'><tr>Tteokbokki with ... <td><img src='menu-images/cheesefishcake.jpg' class='menu-pics'/></td><td><img src='menu-images/noodledumplingfishcake.jpg' class='menu-pics'/></td><td><img src='menu-images/chickenkatsuwithcheese.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Cheese and Fishcake<br></td><td class='menu-title'>Noodles, Dumplings, and Fishcakes<br></td><td class='menu-title'>Chicken Katsu and Cheese<br></td></tr><tr><td>$8<br><br></td><td>$8<br><br></td><td>$10<br><br></td> </tr></table>";
             }
         
             function haruhanaMeals() {
                 document.getElementById('menu').innerHTML =
-                    "<div class='title'><b>HARU HANA MEAL</b><hr></div><div class='subtitle'><b>CHICKEN</b><hr></div><table align='center'><tr><td><img src='menu-images/dakgalbi.jpg' class='menu-pics'/></td><td><img src='menu-images/chickenteriyaki.jpg' class='menu-pics'/></td><td><img src='menu-images/chickenkatsu.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Dak Galbi<br></td><td class='menu-title'>Chicken Teriyaki<br></td><td class='menu-title'>Chicken Katsu<br></td></tr><tr><td>Spicy chicken<br>Add kimchi and cheese - $1<br><br></td><td><br><br></td><td>Add curry - $2<br><br></td></tr><tr><td>$8.5<br><br></td><td>$9<br><br></td><td>$9<br><br></td></tr></table><div class='subtitle'><b>BEEF</b><hr></div><table align='center'><tr><td><img src='menu-images/bulgogi.jpg' class='menu-pics'/></td><td><img src='menu-images/bbqcoreen.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Bulgogi<br></td><td class='menu-title'>Korean BBQ<br></td></tr><tr><td>$10<br><br></td><td>$14.5<br><br></td></tr></table><div class='subtitle'><b>PORK</b><hr></div><table align='center'><tr><td><img src='menu-images/samgyupsal.jpg' class='menu-pics'/></td><td><img src='menu-images/spicypork.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Grilled Pork Belly<br></td><td class='menu-title'>Spicy Pork<br></td></tr><tr><td>Comes with grilled vegetables.<br><br></td><td><br><br></td></tr><tr><td>$9<br><br></td><td>$8.5<br><br></td></tr></table><div class='subtitle'><b>SEAFOOD</b><hr></div><table align='center'><tr><td><img src='menu-images/teriyakisalmon.jpg' class='menu-pics'/></td><td><img src='menu-images/spicycalamari.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Salmon Teriyaki<br></td><td class='menu-title'>Spicy Calamari<br></td></tr><tr><td>$10<br><br></td><td>$8.5<br><br></td></tr></table><div class='subtitle'><b>RICE BOWL</b><hr></div><table align='center'><tr><td><img src='menu-images/kimchifriedrice.jpg' class='menu-pics'/></td><td><img src='menu-images/bibimbap.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Kimchi Fried Rice<br></td><td class='menu-title'>Bibimbap<br></td></tr><tr><td>Comes with a fried egg<br><br></td><td>Various vegetables mixed together <br>with gochujang (pepper paste) sauce.<br>Choice of beef or vegetarian.<br><br></td></tr><tr><td>$8.5<br><br></td><td>$9.5<br><br></td></tr></table>"
+                    "<div class='title'><b>HARU HANA MEAL</b><hr></div><div class='subtitle'><b>CHICKEN</b><hr></div><table align='center'><tr><td><img src='menu-images/dakgalbi.jpg' class='menu-pics'/></td><td><img src='menu-images/chickenteriyaki.jpg' class='menu-pics'/></td><td><img src='menu-images/chickenkatsu.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Dak Galbi<br></td><td class='menu-title'>Chicken Teriyaki<br></td><td class='menu-title'>Chicken Katsu<br></td></tr><tr><td>Spicy chicken<br>Add kimchi and cheese - $1<br><br></td><td><br><br></td><td>Add curry - $2<br><br></td></tr><tr><td>$8.5<br><br></td><td>$9<br><br></td><td>$9<br><br></td></tr></table><div class='subtitle'><b>BEEF</b><hr></div><table align='center'><tr><td><img src='menu-images/bulgogi.jpg' class='menu-pics'/></td><td><img src='menu-images/bbqcoreen.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Bulgogi<br></td><td class='menu-title'>Korean BBQ<br></td></tr><tr><td>$10<br><br></td><td>$14.5<br><br></td></tr></table><div class='subtitle'><b>PORK</b><hr></div><table align='center'><tr><td><img src='menu-images/samgyupsal.jpg' class='menu-pics'/></td><td><img src='menu-images/spicypork.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Grilled Pork Belly<br></td><td class='menu-title'>Spicy Pork<br></td></tr><tr><td>Comes with<br> grilled vegetables.<br><br></td><td><br><br></td></tr><tr><td>$9<br><br></td><td>$8.5<br><br></td></tr></table><div class='subtitle'><b>SEAFOOD</b><hr></div><table align='center'><tr><td><img src='menu-images/teriyakisalmon.jpg' class='menu-pics'/></td><td><img src='menu-images/spicycalamari.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Salmon Teriyaki<br></td><td class='menu-title'>Spicy Calamari<br></td></tr><tr><td>$10<br><br></td><td>$8.5<br><br></td></tr></table><div class='subtitle'><b>RICE BOWL</b><hr></div><table align='center'><tr><td><img src='menu-images/kimchifriedrice.jpg' class='menu-pics'/></td><td><img src='menu-images/bibimbap.jpg' class='menu-pics'/></td></tr><tr><td class='menu-title'>Kimchi Fried Rice<br></td><td class='menu-title'>Bibimbap<br></td></tr><tr><td>Comes with a fried egg<br><br></td><td>Various vegetables<br> mixed together with<br> gochujang (pepper paste) sauce.<br>Choice of beef or vegetarian.<br><br></td></tr><tr><td>$8.5<br><br></td><td>$9.5<br><br></td></tr></table>"
         }
 
         function dessertsAndDrinks() {
