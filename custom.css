@@ -107,9 +107,8 @@ a, a:hover, a:active, a:visited {
 	}
 
 	.nav2 {
-		width: 200px;
 		display: initial;
-		margin: 0 auto;
+		text-align: center;
 	}
 
 	.nav2 li {
@@ -166,6 +165,7 @@ a, a:hover, a:active, a:visited {
 	.footer {
 		padding-top: 10px;
 		padding-left: 0px;
+		margin-top: 50px;
 	}
 
 	.footer ul li, .footer ul div li {
@@ -617,7 +617,7 @@ a, a:hover, a:active, a:visited {
 		}
 
 		#gmap_canvas {
-			height:300px;
+			height:260px;
 			width:100%;
 		}
 	}
