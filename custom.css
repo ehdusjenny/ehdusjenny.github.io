@@ -76,8 +76,8 @@ a, a:hover, a:active, a:visited {
 	font-family: 'generica', Helvetica, sans-serif !important;
 	float: right; 
 	text-align: center;
-	margin-right: 60px;
-	margin-top: 30px;
+	margin-right: 80px;
+	margin-top: 20px;
 }
 
 .social-networks li a i {
@@ -107,14 +107,17 @@ a, a:hover, a:active, a:visited {
 	}
 
 	.nav2 {
+		width: 200px;
 		display: initial;
+		margin: 0 auto;
 	}
 
 	.nav2 li {
 		display: inline-block;
-		margin: auto;
-		margin-top: 10px;
 		background-color: black;
+		margin: auto;
+		margin-right: 10px;
+		margin-top: 10px;
 	}
 
 	.nav2 li a, .nav2 li a:visited, .nav2 li a:link {
@@ -132,6 +135,11 @@ a, a:hover, a:active, a:visited {
 	.nav2 li a:hover {
 		color: rgba(255, 0, 0, 0.9);
 		background-color: transparent;
+	}
+
+	.social-networks {
+		margin-right: 60px;
+		margin-top: 30px;
 	}
 
 }
@@ -287,6 +295,7 @@ a, a:hover, a:active, a:visited {
 	.menu-category {
 		text-align: center;
 		margin-top: 100px;
+		margin-left: -40px;
 	}
 
 	.menu-category span {
@@ -611,6 +620,53 @@ a, a:hover, a:active, a:visited {
 			height:300px;
 			width:100%;
 		}
+	}
+
+	@media (max-width: 455px) {
+		#info {
+			height: 500px;
+		}
+
+		#inner {
+			width: 100%;
+			margin: auto;
+		}
+
+		#contact {
+			float: left;
+			padding-top: 60px;
+			text-align: center;
+		}
+
+		#contact b {
+			font-size: 30px;
+		}
+
+		#table1 {
+			border-collapse: separate;
+			border-spacing: 10px 10px;
+			font-family: "Audi Type Normal", Verdana, sans-serif;
+			text-align: center;
+			font-size: 18px;
+		}
+
+		#table2 {
+			border-collapse: separate;
+			border-spacing: 25px 10px;
+			text-align: center;
+			font-size: 14px;
+		}
+
+		.arrow_box {
+			position: relative;
+			background: #fffcfd;
+			height: 90px;
+			width: 84px;
+			padding-top: 5px;
+			border: 3px solid #000000;
+		}
+
+
 	}
 
 /* END OF CONTACT-US*/
