@@ -55,13 +55,12 @@ a, a:hover, a:active, a:visited {
 .footer {
 	margin-top: 100px;
 	padding-top: 30px;
+	float: left;
 	padding-bottom: 30px;
 	padding-left: 100px;
 	width: 100%;
 	background-color: black;
-	float: left;
 	color: white;
-	display: inline;
 	border-top: 4px dotted rgba(255, 255, 255, 0.8);
 	font-family: "Audi Type Normal", Verdana, sans-serif;
 }
@@ -109,6 +108,7 @@ a, a:hover, a:active, a:visited {
 	.nav2 {
 		display: initial;
 		text-align: center;
+		float: right;
 	}
 
 	.nav2 li {
@@ -168,13 +168,6 @@ a, a:hover, a:active, a:visited {
 		margin-top: 50px;
 	}
 
-	.footer ul li, .footer ul div li {
-		margin-top: 15px;
-	 	float: left;
-		display: inline;
-		font-size: 13px;
-	}
-
 	.connect {
 		outline-offset: 5px;
 		font-size: 15px;
@@ -183,13 +176,21 @@ a, a:hover, a:active, a:visited {
 }
 
 @media (max-width: 695px) {
+
+	.footer li {
+		float: none;
+		margin: auto;
+	}
+
 	.social-networks {
-		float: left;
-		padding-left: 30px;
+		float: none;
+		padding-top: 170px;
+		width: 150px;
+		margin: auto;
 	}
 }
 
-@media (max-width: 520px) {
+@media (max-width: 530px) {
 	.footer {
 		margin-top: 20px;
 	}
@@ -200,11 +201,7 @@ a, a:hover, a:active, a:visited {
 	}
 
 	.social-networks {
-		width: 200px;
-	}
-
-	.social-networks li ul {
-		padding: 0;
+		padding-top: 60px;
 	}
 }
 
@@ -587,7 +584,7 @@ a, a:hover, a:active, a:visited {
 
 	@media (max-width: 950px) {
 		#info {
-			margin-top: 20px;
+			margin-top: 45px;
 			height: 470px;
 		}
 
