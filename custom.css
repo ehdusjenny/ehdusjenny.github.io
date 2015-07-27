@@ -656,16 +656,16 @@ a, a:hover, a:active, a:visited {
 
 		#table2 {
 			border-collapse: separate;
-			border-spacing: 25px 10px;
+			border-spacing: 20px 10px;
 			text-align: center;
-			font-size: 14px;
+			font-size: 13px;
 		}
 
 		.arrow_box {
 			position: relative;
 			background: #fffcfd;
 			height: 80px;
-			width: 75px;
+			width: 70px;
 			padding-top: 5px;
 			border: 3px solid #000000;
 		}
