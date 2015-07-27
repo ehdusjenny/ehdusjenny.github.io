@@ -108,7 +108,7 @@ a, a:hover, a:active, a:visited {
 	.nav2 {
 		display: initial;
 		text-align: center;
-		float: right;
+		margin-left: -15px;
 	}
 
 	.nav2 li {
@@ -585,6 +585,11 @@ a, a:hover, a:active, a:visited {
 		background: none !important;
 	}
 
+	#address {
+		padding-top: 20px;
+		font-size: 17px;
+	}
+
 	@media (max-width: 950px) {
 		#info {
 			margin-top: 45px;
@@ -633,13 +638,12 @@ a, a:hover, a:active, a:visited {
 		}
 
 		#contact {
-			float: left;
 			padding-top: 60px;
 			text-align: center;
 		}
 
 		#contact b {
-			font-size: 30px;
+			font-size: 24px;
 		}
 
 		#table1 {
@@ -647,7 +651,7 @@ a, a:hover, a:active, a:visited {
 			border-spacing: 10px 10px;
 			font-family: "Audi Type Normal", Verdana, sans-serif;
 			text-align: center;
-			font-size: 18px;
+			font-size: 14px;
 		}
 
 		#table2 {
@@ -660,12 +664,15 @@ a, a:hover, a:active, a:visited {
 		.arrow_box {
 			position: relative;
 			background: #fffcfd;
-			height: 90px;
-			width: 84px;
+			height: 80px;
+			width: 75px;
 			padding-top: 5px;
 			border: 3px solid #000000;
 		}
 
+		#address {
+			font-size: 13px;
+		}
 
 	}
 
