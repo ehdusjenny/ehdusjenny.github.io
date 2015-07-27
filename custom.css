@@ -115,7 +115,6 @@ a, a:hover, a:active, a:visited {
 		display: inline-block;
 		background-color: black;
 		margin: auto;
-		margin-right: 10px;
 		margin-top: 10px;
 	}
 
@@ -123,11 +122,11 @@ a, a:hover, a:active, a:visited {
 		font-family: "Trebuchet MS", Helvetica, sans-serif;
 		font-size: 15px;
 		color: white;
-		padding-right: 20px;
+		padding-right: 10px;
 	}
 
 	.nav2 li a i {
-		margin-left: 15px;
+		margin-left: 8px;
 		margin-right: 8px;
 	}
 
