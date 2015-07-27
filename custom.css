@@ -255,12 +255,12 @@ a, a:hover, a:active, a:visited {
 		.text-block {
 			width: 100% !important;
 			font-size: 30px;
-			height: 330px;
+			height: 290px;
 		}
 
 		#innovative {
 			color: red;
-			font-size: 60px;
+			font-size: 50px;
 			text-align: center;
 		}
 
@@ -275,8 +275,8 @@ a, a:hover, a:active, a:visited {
 		}
 
 		#slides img {
-			width: 350px;
-			height: 350px;
+			width: 300px;
+			height: 300px;
 		}
 	}
 
