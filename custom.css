@@ -330,6 +330,7 @@ a, a:hover, a:active, a:visited {
 		background-color: white;
 		font-family: "Audi Type Normal", Verdana, sans-serif;
 		color: black;
+		font-size: 17px;
 	}
 
 	.title {
@@ -366,12 +367,13 @@ a, a:hover, a:active, a:visited {
 	}
 
 	.menu-pics {
-		height: 260px;
-		width: 260px;
+		height: 390px;
+		width: 380px;
 	}
 
 	.menu-title {
-		font-size: 15px;
+		font-size: 20px;
+		font-family: "Gotham-Medium", Helvetica, sans-serif;
 	}
 
 	@media (max-width: 950px) {
@@ -410,12 +412,7 @@ a, a:hover, a:active, a:visited {
 		#menu table {
 			margin-top: 60px; 
 			border-collapse: separate;
-			border-spacing: 10px 10px;
-		}
-
-		.menu-pics {
-			height: 160px;
-			width: 160px;
+			border-spacing: 15px 10px;
 		}
 	}
 
@@ -472,11 +469,6 @@ a, a:hover, a:active, a:visited {
 			border-collapse: separate;
 			border-spacing: 0px 10px;
 			font-size: 12px;
-		}
-
-		.menu-pics {
-			height: 100px;
-			width: 100px;
 		}
 
 		.menu-title {
