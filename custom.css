@@ -108,13 +108,18 @@ a, a:hover, a:active, a:visited {
 	.nav2 {
 		display: initial;
 		text-align: center;
-		margin-left: -15px;
+	}
+
+	.nav2 ul {
+		list-style: none;
+		margin-left: -30px;
 	}
 
 	.nav2 li {
 		display: inline-block;
 		background-color: black;
 		margin: auto;
+		text-align: center;
 		margin-right: 5px;
 		margin-top: 10px;
 	}
