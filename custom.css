@@ -168,6 +168,10 @@ a, a:hover, a:active, a:visited {
 		margin-top: 50px;
 	}
 
+	.footer b {
+		margin-left: -20px;
+	}
+
 	.connect {
 		outline-offset: 5px;
 		font-size: 15px;
