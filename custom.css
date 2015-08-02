@@ -1,5 +1,5 @@
 body {
-	background: url("background.jpg") fixed;
+	background: url("background_2.jpeg") fixed;
 }
 
 a, a:hover, a:active, a:visited {
@@ -8,11 +8,10 @@ a, a:hover, a:active, a:visited {
 
 .nav {
 	background-color: black;
-	border-bottom: 4px dotted rgba(255, 255, 255, 0.8);
 	height: 200px;
 	width: 100%;
 	position: relative;
-	padding-top: 110px;
+	padding-top: 103px;
 	display: inline-block;
 }
 
@@ -23,7 +22,7 @@ a, a:hover, a:active, a:visited {
 .logo {
     display: inline-block;
     margin-left: 80px;
-    font-family: "Audi Type Normal", Verdana, sans-serif;
+    font-family: "Freeland", Verdana, sans-serif;
     color: white;
     font-size: 70px;
     text-decoration: none;
@@ -33,7 +32,7 @@ a, a:hover, a:active, a:visited {
 	display: inline-block;
 	float: right;
 	margin-right: 20px;
-	margin-top: 50px;
+	margin-top: 55px;
 }
 
 .nav li a, .nav li a:visited, .nav li a:link {
@@ -99,7 +98,11 @@ a, a:hover, a:active, a:visited {
 	margin-left: -18px;
 }
 
-@media (max-width: 603px) {
+@media (max-width: 680px) {
+
+	.nav a {
+		text-align: center;
+	}
 
 	.nav li {
 		display: none;
@@ -111,6 +114,7 @@ a, a:hover, a:active, a:visited {
 	}
 
 	.nav2 ul {
+		margin-top: 10px;
 		list-style: none;
 		margin-left: -30px;
 	}
@@ -146,6 +150,14 @@ a, a:hover, a:active, a:visited {
 		margin-top: 30px;
 	}
 
+	.smaller-footer {
+		text-align: center;
+	}
+
+	.smaller-footer ul {
+
+	}
+
 }
 
 @media (max-width: 950px) {
@@ -156,7 +168,7 @@ a, a:hover, a:active, a:visited {
 
 	.logo {
 	    font-size: 40px;
-	    margin-left: 15px;
+	    margin-left: 30px;
 	}
 
 	.nav li {
@@ -377,6 +389,11 @@ a, a:hover, a:active, a:visited {
 		margin-top: 60px; 
 		border-collapse: separate;
 		border-spacing: 40px 10px;
+	}
+
+	#menu table td {
+		overflow: hidden;
+		width: 500px;
 	}
 
 	.menu-pics {
