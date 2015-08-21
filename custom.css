@@ -22,7 +22,7 @@ a, a:hover, a:active, a:visited {
 .logo {
     display: inline-block;
     margin-left: 80px;
-    font-family: "Freeland", Verdana, sans-serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: white;
     font-size: 70px;
     text-decoration: none;
@@ -98,7 +98,7 @@ a, a:hover, a:active, a:visited {
 	margin-left: -18px;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 695px) {
 
 	.nav a {
 		text-align: center;
@@ -145,17 +145,24 @@ a, a:hover, a:active, a:visited {
 		background-color: transparent;
 	}
 
+	.footer li {
+		float: none;
+	}
+
+	.footer ul li, .footer ul div li {
+	 	float: none;
+		text-align: center;
+	}
+
 	.social-networks {
-		margin-right: 60px;
-		margin-top: 30px;
+		float: none;
+		width: 150px;
+		margin: auto;
+		padding-top: 40px;
 	}
 
 	.smaller-footer {
 		text-align: center;
-	}
-
-	.smaller-footer ul {
-
 	}
 
 }
@@ -180,7 +187,7 @@ a, a:hover, a:active, a:visited {
 	}
 
 	.footer {
-		padding-top: 10px;
+		padding-top: 30px;
 		padding-left: 0px;
 		margin-top: 50px;
 	}
@@ -196,33 +203,9 @@ a, a:hover, a:active, a:visited {
 
 }
 
-@media (max-width: 695px) {
-
-	.footer li {
-		float: none;
-		margin: auto;
-	}
-
-	.social-networks {
-		float: none;
-		padding-top: 170px;
-		width: 150px;
-		margin: auto;
-	}
-}
-
 @media (max-width: 530px) {
 	.footer {
 		margin-top: 20px;
-	}
-
-	.footer ul li, .footer ul div li {
-	 	float: none;
-		text-align: center;
-	}
-
-	.social-networks {
-		padding-top: 60px;
 	}
 }
 
@@ -403,7 +386,7 @@ a, a:hover, a:active, a:visited {
 
 	.menu-title {
 		font-size: 20px;
-		font-family: "Gotham-Medium", Helvetica, sans-serif;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
 	}
 
 	@media (max-width: 950px) {
