@@ -40,14 +40,26 @@
             </ul>
         </div>
 
-        <ul class="menu-category">
+        <nav class="button-menu-category">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: white">
+                    <span class="icon-bar" style="background-color: black"></span>
+                    <span class="icon-bar" style="background-color: black"></span>
+                    <span class="icon-bar" style="background-color: black"></span> 
+                </button>
+            </div>
+        </nav>
+
+        <ul class="menu-category" id="myNavbar">
             <span><b>
-                <li><a onclick="smallDishes()"><i class="fa fa-caret-right" style="padding-left: 3px"></i>SMALL DISHES</a></li>
-                <li><a onclick="jeonAndStew()"><i class="fa fa-caret-right"></i>JEON AND STEW</a></li>
-                <li><a onclick="ramen()"><i class="fa fa-caret-right"></i>RAMEN</a></li>
-                <li><a onclick="tteokbokki()"><i class="fa fa-caret-right"></i>TTEOKBOKKI</a></li>
-                <li><a onclick="haruhanaMeals()"><i class="fa fa-caret-right"></i>HARUHANA MEALS</a></li>
-                <li><a onclick="dessertsAndDrinks()"><i class="fa fa-caret-right"></i>DESSERTS & DRINKS</a></li>
+                <li><a href="menu.html"><i class="fa fa-caret-right" style="padding-left: 3px"></i>APPETIZER</a></li>
+                <li><a href="jeon.html"><i class="fa fa-caret-right"></i>STEW & JEON</a></li>
+                <li><a href="noodles.html"><i class="fa fa-caret-right"></i>NOODLES</a></li>
+                <li><a href="tteokbokki.html"><i class="fa fa-caret-right"></i>TTEOKBOKKI</a></li>
+                <li><a href="sliders.html"><i class="fa fa-caret-right"></i>SLIDERS, BUNS, & KIMBAP</a></li>
+                <li><a href="friedchicken.html"><i class="fa fa-caret-right"></i>FRIED CHICKEN</a></li>
+                <li><a href="haruhanameals.html"><i class="fa fa-caret-right"></i>HARUHANA MEALS</a></li>
+                <li><a href="dessertsAndDrinks.html"><i class="fa fa-caret-right"></i>DESSERTS & DRINKS</a></li>
             </b></span>
         </ul>
 
@@ -56,7 +68,8 @@
             <b>HARU HANA MEAL</b>
             <hr style='margin-bottom: 3px'>
         </div>
-        Served with rice and kimchi<br><br><br>
+        Served with rice and kimchi
+        <br> * Sauteed with vegetables
         <div class='subtitle'>
             <b>CHICKEN</b>
             <hr>
@@ -74,28 +87,28 @@
                 </td>
             </tr>
             <tr>
-                <td class='menu-title'>Dak Galbi<br>
+                <td class='menu-title'>Dak Galbi *
                 </td>
-                <td class='menu-title'>Chicken Teriyaki<br>
+                <td class='menu-title'>Chicken Teriyaki *
                 </td>
-                <td class='menu-title'>Chicken Katsu<br>
+                <td class='menu-title'>Chicken Katsu
                 </td>
             </tr>
             <tr>
-                <td>Spicy chicken<br>Add kimchi and cheese - $1<br><br>
+                <td>Spicy chicken <br> Add kimchi and cheese - $1
                 </td>
                 <td>
-                    <br><br>
+                    
                 </td>
-                <td>Add curry - $2<br><br>
+                <td>Add curry - $2
                 </td>
             </tr>
             <tr>
-                <td>$8.5<br><br>
+                <td>$8.5
                 </td>
-                <td>$9<br><br>
+                <td>$9
                 </td>
-                <td>$9<br><br>
+                <td>$9
                 </td>
             </tr>
         </table>
@@ -113,15 +126,21 @@
                 </td>
             </tr>
             <tr>
-                <td class='menu-title'>Bulgogi<br>
+                <td class='menu-title'>Bulgogi*
                 </td>
-                <td class='menu-title'>Korean BBQ<br>
+                <td class='menu-title'>Korean BBQ*
                 </td>
             </tr>
             <tr>
-                <td>$10<br><br>
+                <td>Sweet marinated beef
                 </td>
-                <td>$14.5<br><br>
+                <td>Savoury marinated beef short ribs
+                </td>
+            </tr>
+            <tr>
+                <td>$10
+                </td>
+                <td>$14.5
                 </td>
             </tr>
         </table>
@@ -137,26 +156,64 @@
                 <td>
                     <img src='menu-images/spicypork.jpg' class='menu-pics'/>
                 </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Grilled Pork Belly<br>
-                </td>
-                <td class='menu-title'>Spicy Pork<br>
+                <td>
+                    <img src='menu-images/doenjangbutter.jpg' class='menu-pics'/>
                 </td>
             </tr>
             <tr>
-                <td>Comes with<br> grilled vegetables.<br><br>
+                <td class='menu-title'>Grilled Pork Belly
                 </td>
-                <td><br><br>
+                <td class='menu-title'>Spicy Pork *
+                </td>
+                <td class='menu-title'>Doenjang Butter Pork Shoulder *
                 </td>
             </tr>
             <tr>
-                <td>$9<br><br>
+                <td>Sauteed with onions, garlic, and cabbage, with ssamjang sauce and green tea salt.
                 </td>
-                <td>$8.5<br><br>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>$9
+                </td>
+                <td>$8.5
+                </td>
+                <td>$9
                 </td>
             </tr>
         </table>
+        <table align='center'>
+            <tr>
+                <td>
+                    <img src='menu-images/spareribs.jpg' class='menu-pics'/>
+                </td>
+                <td>
+                    <img src='menu-images/nanjawansu.jpg' class='menu-pics'/>
+                </td>
+            </tr>
+            <tr>
+                <td class='menu-title'>Spare Ribs
+                </td>
+                <td class='menu-title'>Nanja Wansu *
+                </td>
+            </tr>
+            <tr>
+                <td>Marinated in soy and ginger based sauce.
+                </td>
+                <td>Pork meatballs bathed in rich, tangy sauce.
+                </td>
+            </tr>
+            <tr>
+                <td>$11
+                </td>
+                <td>$9
+                </td>
+            </tr>
+        </table>
+
         <div class='subtitle'>
             <b>SEAFOOD</b>
             <hr>
@@ -169,17 +226,32 @@
                 <td>
                     <img src='menu-images/spicycalamari.jpg' class='menu-pics'/>
                 </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Salmon Teriyaki<br>
-                </td>
-                <td class='menu-title'>Spicy Calamari<br>
+                <td>
+                    <img src='menu-images/ohsambulgogi.jpg' class='menu-pics'/>
                 </td>
             </tr>
             <tr>
-                <td>$10<br><br>
+                <td class='menu-title'>Salmon Teriyaki *
                 </td>
-                <td>$8.5<br><br>
+                <td class='menu-title'>Spicy Calamari *
+                </td>
+                <td class='menu-title'>OhSam Bulgogi *
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>Spicy calamari and pork belly.
+                </td>
+            </tr>
+            <tr>
+                <td>$10
+                </td>
+                <td>$8.5
+                </td>
+                <td>$10
                 </td>
             </tr>
         </table>
@@ -197,21 +269,21 @@
                 </td>
             </tr>
             <tr>
-                <td class='menu-title'>Kimchi Fried Rice<br>
+                <td class='menu-title'>Kimchi Fried Rice
                 </td>
-                <td class='menu-title'>Bibimbap<br>
-                </td>
-            </tr>
-            <tr>
-                <td>Comes with a fried egg<br><br>
-                </td>
-                <td>Various vegetables<br> mixed together with<br> gochujang (pepper paste) sauce.<br>Choice of beef or vegetarian.<br><br>
+                <td class='menu-title'>Bibimbap
                 </td>
             </tr>
             <tr>
-                <td>$8.5<br><br>
+                <td>Stir fried with bacon and vegetables, topped with a fried egg.
                 </td>
-                <td>$9.5<br><br>
+                <td>Steamed rice topped with assorted sauteed vegetables and a fried egg with a side of gochujang (chili paste), with a choice of beef or tofu.
+                </td>
+            </tr>
+            <tr>
+                <td>$8.5
+                </td>
+                <td>$9.5
                 </td>
             </tr>
         </table>
@@ -254,14 +326,14 @@
     <script>
         function updateImageSize() {
             var list = document.getElementsByClassName("menu-pics");
-            if (window.innerWidth > 1000) {
-                size = window.innerWidth/3 - 150 + "px";
+            if (window.innerWidth > 1300) {
+                size = window.innerWidth/3 - 250 + "px";
             }
-            else if (window.innerWidth > 500) {
-                size = window.innerWidth/3 - 59 + "px";
+            else if (window.innerWidth > 600) {
+                size = window.innerWidth/3 - 100 + "px";
             }
             else {
-                size = window.innerWidth/3 - 10 + "px";
+                size = window.innerWidth/3 - 27 + "px";
             }
             for (i = 0; i < list.length; i++) {
                 list[i].style.width = size;

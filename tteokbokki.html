@@ -40,14 +40,26 @@
             </ul>
         </div>
 
-        <ul class="menu-category">
+        <nav class="button-menu-category">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: white">
+                    <span class="icon-bar" style="background-color: black"></span>
+                    <span class="icon-bar" style="background-color: black"></span>
+                    <span class="icon-bar" style="background-color: black"></span> 
+                </button>
+            </div>
+        </nav>
+
+        <ul class="menu-category" id="myNavbar">
             <span><b>
-                <li><a onclick="smallDishes()"><i class="fa fa-caret-right" style="padding-left: 3px"></i>SMALL DISHES</a></li>
-                <li><a onclick="jeonAndStew()"><i class="fa fa-caret-right"></i>JEON AND STEW</a></li>
-                <li><a onclick="ramen()"><i class="fa fa-caret-right"></i>RAMEN</a></li>
-                <li><a onclick="tteokbokki()"><i class="fa fa-caret-right"></i>TTEOKBOKKI</a></li>
-                <li><a onclick="haruhanaMeals()"><i class="fa fa-caret-right"></i>HARUHANA MEALS</a></li>
-                <li><a onclick="dessertsAndDrinks()"><i class="fa fa-caret-right"></i>DESSERTS & DRINKS</a></li>
+                <li><a href="menu.html"><i class="fa fa-caret-right" style="padding-left: 3px"></i>APPETIZER</a></li>
+                <li><a href="jeon.html"><i class="fa fa-caret-right"></i>STEW & JEON</a></li>
+                <li><a href="noodles.html"><i class="fa fa-caret-right"></i>NOODLES</a></li>
+                <li><a href="tteokbokki.html"><i class="fa fa-caret-right"></i>TTEOKBOKKI</a></li>
+                <li><a href="sliders.html"><i class="fa fa-caret-right"></i>SLIDERS, BUNS, & KIMBAP</a></li>
+                <li><a href="friedchicken.html"><i class="fa fa-caret-right"></i>FRIED CHICKEN</a></li>
+                <li><a href="haruhanameals.html"><i class="fa fa-caret-right"></i>HARUHANA MEALS</a></li>
+                <li><a href="dessertsAndDrinks.html"><i class="fa fa-caret-right"></i>DESSERTS & DRINKS</a></li>
             </b></span>
         </ul>
 
@@ -57,7 +69,7 @@
             <hr>
         </div>
         <table align='center'>
-            <tr>Tteokbokki with ... 
+            <tr> 
                 <td>
                     <img src='menu-images/cheesefishcake.jpg' class='menu-pics'/>
                 </td>
@@ -69,19 +81,47 @@
                 </td>
             </tr>
             <tr>
-                <td class='menu-title'>Cheese and Fishcake<br>
+                <td class='menu-title'>Tteokbokki with Egg and Fishcake
                 </td>
-                <td class='menu-title'>Noodles, Dumplings, and Fishcakes<br>
+                <td class='menu-title'>Tteokbokki with Chicken Katsu and Cheese
                 </td>
-                <td class='menu-title'>Chicken Katsu and Cheese<br>
+                <td class='menu-title'>Tteokbokki with Assorted Tempura Vegetables
                 </td>
             </tr>
             <tr>
-                <td>$8<br><br>
+                <td>$8
                 </td>
-                <td>$8<br><br>
+                <td>$10
                 </td>
-                <td>$10<br><br>
+                <td>$9
+                </td>
+            </tr>
+        </table>
+        <table align='center'>
+            <tr> 
+                <td>
+                    <img src='menu-images/szechuantteokbokki.jpg' class='menu-pics'/>
+                </td>
+                <td>
+                    <img src='menu-images/carbonaratteokbokki.jpg' class='menu-pics'/>
+                </td>
+            </tr>
+            <tr>
+                <td>Szechuan Tteokbokki
+                </td>
+                <td>Carbonara Tteokbokki
+                </td>
+            </tr>
+            <tr>
+                <td>Served with spicy Szechuan style stir fried pork
+                </td>
+                <td>Served with bacon and ham in creamy carbonara sauce
+                </td>
+            </tr>
+            <tr>
+                <td>$9
+                </td>
+                <td>$9
                 </td>
             </tr>
         </table>
@@ -123,11 +163,11 @@
     <script>
         function updateImageSize() {
             var list = document.getElementsByClassName("menu-pics");
-            if (window.innerWidth > 1000) {
-                size = window.innerWidth/3 - 150 + "px";
+            if (window.innerWidth > 1300) {
+                size = window.innerWidth/3 - 250 + "px";
             }
-            else if (window.innerWidth > 500) {
-                size = window.innerWidth/3 - 59 + "px";
+            else if (window.innerWidth > 600) {
+                size = window.innerWidth/3 - 100 + "px";
             }
             else {
                 size = window.innerWidth/3 - 10 + "px";

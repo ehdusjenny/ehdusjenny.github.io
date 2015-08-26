@@ -40,14 +40,26 @@
             </ul>
         </div>
 
-        <ul class="menu-category">
+        <nav class="button-menu-category">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: white">
+                    <span class="icon-bar" style="background-color: black"></span>
+                    <span class="icon-bar" style="background-color: black"></span>
+                    <span class="icon-bar" style="background-color: black"></span> 
+                </button>
+            </div>
+        </nav>
+
+        <ul class="menu-category" id="myNavbar">
             <span><b>
-                <li><a onclick="smallDishes()"><i class="fa fa-caret-right" style="padding-left: 3px"></i>SMALL DISHES</a></li>
-                <li><a onclick="jeonAndStew()"><i class="fa fa-caret-right"></i>JEON AND STEW</a></li>
-                <li><a onclick="ramen()"><i class="fa fa-caret-right"></i>RAMEN</a></li>
-                <li><a onclick="tteokbokki()"><i class="fa fa-caret-right"></i>TTEOKBOKKI</a></li>
-                <li><a onclick="haruhanaMeals()"><i class="fa fa-caret-right"></i>HARUHANA MEALS</a></li>
-                <li><a onclick="dessertsAndDrinks()"><i class="fa fa-caret-right"></i>DESSERTS & DRINKS</a></li>
+                <li><a href="menu.html"><i class="fa fa-caret-right" style="padding-left: 3px"></i>APPETIZER</a></li>
+                <li><a href="jeon.html"><i class="fa fa-caret-right"></i>STEW & JEON</a></li>
+                <li><a href="noodles.html"><i class="fa fa-caret-right"></i>NOODLES</a></li>
+                <li><a href="tteokbokki.html"><i class="fa fa-caret-right"></i>TTEOKBOKKI</a></li>
+                <li><a href="sliders.html"><i class="fa fa-caret-right"></i>SLIDERS, BUNS, & KIMBAP</a></li>
+                <li><a href="friedchicken.html"><i class="fa fa-caret-right"></i>FRIED CHICKEN</a></li>
+                <li><a href="haruhanameals.html"><i class="fa fa-caret-right"></i>HARUHANA MEALS</a></li>
+                <li><a href="dessertsAndDrinks.html"><i class="fa fa-caret-right"></i>DESSERTS & DRINKS</a></li>
             </b></span>
         </ul>
 
@@ -69,19 +81,19 @@
                 </td>
             </tr>
             <tr>
-                <td class='menu-title'>Poached Egg Ramen<br>
+                <td class='menu-title'>Poached Egg Ramen
                 </td>
-                <td class='menu-title'>Miso Ramen with Pork<br>
+                <td class='menu-title'>Miso Ramen with Pork
                 </td>
-                <td class='menu-title'>Chicken Ramen<br>
+                <td class='menu-title'>Chicken Ramen
                 </td>
             </tr>
             <tr>
-                <td>$5.5<br><br>
+                <td>$5.5
                 </td>
-                <td>$7.5<br><br>
+                <td>$7.5
                 </td>
-                <td>$6.95<br><br>
+                <td>$6.95
                 </td>
             </tr>
             <tr>
@@ -96,28 +108,58 @@
                 </td>
             </tr>
             <tr>
-                <td class='menu-title'>Bulgogi Ramen<br>
+                <td class='menu-title'>Bulgogi Ramen
                 </td>
-                <td class='menu-title'>Hangover Ramen<br>
+                <td class='menu-title'>Hangover Ramen
                 </td>
-                <td class='menu-title'>Szechuan Ramen<br>
+                <td class='menu-title'>Szechuan Ramen
                 </td>
             </tr>
             <tr>
                 <td>
-                    <br><br>
+                    
                 </td>
-                <td>With spicy seafood.<br><br>
+                <td>With spicy seafood.
                 </td>
-                <td>With pork, cashew nuts,<br> and spinach.<br>*With no soup<br>
+                <td>With pork, cashew nuts,and spinach.*With no soup
                 </td>
             </tr>
             <tr>
-                <td>$8.5<br><br>
+                <td>$8.5
                 </td>
-                <td>$8.5<br><br>
+                <td>$8.5
                 </td>
-                <td>$9<br><br>
+                <td>$9
+                </td>
+            </tr>
+        </table>
+        <table align='center'>
+            <tr>
+                <td>
+                    <img src='menu-images/kimchibibimguksu.jpg' class='menu-pics'/>
+                </td>
+                <td>
+                    <img src='menu-images/bokkeumudon.jpg' class='menu-pics'/>
+                </td>
+                
+            </tr>
+            <tr>
+                <td class='menu-title'>Kimchi Bibim Guksu
+                </td>
+                <td class='menu-title'>Bokkeum Udon
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Spicy cold noodles topped with kimchi, sliced pork, egg and vegetables
+                </td>
+                <td>Udon noodles stir fried with vegetables, with a choice of beef, chicken, or seafood
+                </td>
+            </tr>
+            <tr>
+                <td>$8.5
+                </td>
+                <td>$8.5
                 </td>
             </tr>
         </table>
@@ -159,11 +201,11 @@
     <script>
         function updateImageSize() {
             var list = document.getElementsByClassName("menu-pics");
-            if (window.innerWidth > 1000) {
-                size = window.innerWidth/3 - 150 + "px";
+            if (window.innerWidth > 1300) {
+                size = window.innerWidth/3 - 250 + "px";
             }
-            else if (window.innerWidth > 500) {
-                size = window.innerWidth/3 - 59 + "px";
+            else if (window.innerWidth > 600) {
+                size = window.innerWidth/3 - 100 + "px";
             }
             else {
                 size = window.innerWidth/3 - 10 + "px";
