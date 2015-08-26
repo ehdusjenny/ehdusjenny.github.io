@@ -1,5 +1,5 @@
 body {
-	background: url("background_2.jpeg") fixed;
+	background: url("background3.jpg") fixed;
 }
 
 a, a:hover, a:active, a:visited {
@@ -56,7 +56,7 @@ a, a:hover, a:active, a:visited {
 	padding-top: 30px;
 	float: left;
 	padding-bottom: 30px;
-	padding-left: 100px;
+	padding-left: 20px;
 	width: 100%;
 	background-color: black;
 	color: white;
@@ -86,16 +86,13 @@ a, a:hover, a:active, a:visited {
 	color: white;
 }
 
-.social-networks li ul {
-	padding: 0;
-}
-
 .connect {
 	text-align: center;
 	outline: 2px dotted white;
 	outline-offset: 10px;
 	font-size: 20px;
 	margin-left: -18px;
+	margin-bottom: -10px;
 }
 
 @media (max-width: 695px) {
@@ -145,12 +142,17 @@ a, a:hover, a:active, a:visited {
 		background-color: transparent;
 	}
 
-	.footer li {
-		float: none;
+	.footer ul > li:first-child {
+		display: inline-block;
+		margin-left: -15px;
 	}
 
 	.footer ul li, .footer ul div li {
 	 	float: none;
+	}
+
+	.social-networks li {
+		float: none;
 		text-align: center;
 	}
 
@@ -158,13 +160,14 @@ a, a:hover, a:active, a:visited {
 		float: none;
 		width: 150px;
 		margin: auto;
-		padding-top: 40px;
+		padding-left: -40px;
+		padding-top: 50px;
 	}
 
 	.smaller-footer {
 		text-align: center;
+		margin-left: -44px;
 	}
-
 }
 
 @media (max-width: 950px) {
@@ -188,26 +191,16 @@ a, a:hover, a:active, a:visited {
 
 	.footer {
 		padding-top: 30px;
-		padding-left: 0px;
 		margin-top: 50px;
-	}
-
-	.footer b {
-		margin-left: -20px;
 	}
 
 	.connect {
 		outline-offset: 5px;
-		font-size: 15px;
+		font-size: 18px;
 	}
 
 }
 
-@media (max-width: 530px) {
-	.footer {
-		margin-top: 20px;
-	}
-}
 
 /*FOR INDEX*/
 
@@ -273,8 +266,8 @@ a, a:hover, a:active, a:visited {
 		}
 
 		#slides {
-			width: 300px;
-			height: 300px;
+			width: 280px;
+			height: 280px;
 			margin: auto;
 		}
 
@@ -352,6 +345,11 @@ a, a:hover, a:active, a:visited {
 		font-size: 30px;
 		padding-top: 50px;
 		margin-top: 40px;
+	}
+
+	.title h1 {
+		font-weight: bold;
+		font-size: 20px;
 	}
 
 	.title hr {
@@ -510,6 +508,11 @@ a, a:hover, a:active, a:visited {
 			margin-top: 8px;
 			border-width: 2px;
 			padding-bottom: 10px;
+		}
+
+		.title h1 {
+			font-weight: bold;
+			font-size: 16px;
 		}
 
 		.subtitle {
