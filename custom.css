@@ -360,7 +360,7 @@ a, a:hover, a:active, a:visited {
 	}
 
 	.subtitle {
-		font-size: 20px;
+		font-size: 17px;
 	}
 
 	.subtitle hr {
@@ -382,8 +382,8 @@ a, a:hover, a:active, a:visited {
 	}
 
 	.menu-pics {
-		height: 390px;
-		width: 380px;
+		height: 310px;
+		width: 300px;
 	}
 
 	.menu-title {
@@ -420,7 +420,7 @@ a, a:hover, a:active, a:visited {
 		}
 
 		.subtitle {
-			font-size: 12px;
+			font-size: 17px;
 		}
 
 		.subtitle hr {

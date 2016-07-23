@@ -23,6 +23,8 @@
     </head>
 
     <body>
+        <!-- Begin NavBar -->
+
         <ul class="nav">
             <a href="index.html"><div class="logo"><b>HARU HANA</b></div></a>
             <li><a href="contact-us.html"><i class="fa fa-train"></i>INFO</a></li>
@@ -47,6 +49,7 @@
                 </button>
             </div>
         </nav>
+
         <ul class="menu-category" id="myNavbar">
             <span><b>
                 <li><a href="menu.html"><i class="fa fa-caret-right" style="padding-left: 3px"></i>SMALL DISHES</a></li>
@@ -63,61 +66,53 @@
 
         <div id="menu">
             <div class="title">
-                <b>SMALL DISHES</b>
+                <b>Drinks</b>
                 <hr>
             </div>
             <table align="center">
                 <tr>
                     <td>
-                        <img src="menu-images/misosoup.jpg" class="menu-pics"/>
+                        <img src="menu-images/yujacha.jpg" class="menu-pics"/>
                     </td>
                     <td>
-                        <img src="menu-images/dakgangjeong.jpg" class="menu-pics"/>
+                        <img src="menu-images/greentealemonade.jpg" class="menu-pics"/>
                     </td>
                 </tr>
                 <tr>
-                    <td class="menu-title">Miso Soup
+                    <td class="menu-title">Yuja Lemonade
                     </td>
-                    <td class="menu-title">Dak Gang Jeong
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td>Fried chicken balls in sweet chili sauce
-                    </td>
-                </tr>
-                <tr>
-                    <td>$3
-                    </td>
-                    <td>S: $7 &nbsp; &nbsp; L: $13
+                    <td class="menu-title">Green Tea Lemonade
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="menu-images/mandutuikim.jpg" class="menu-pics"/>
                     </td>
                     <td>
-                        <img src="menu-images/japchae.jpg" class="menu-pics"/>
                     </td>
                 </tr>
                 <tr>
-                    <td class="menu-title">Mandu Tuikim
+                    <td>$3.5
                     </td>
-                    <td class="menu-title">Japchae
+                    <td>$3.5
                     </td>
                 </tr>
+            </table>
+            <table align="center">
                 <tr>
                     <td>
-                        Fried dumplings - chicken or vegetarian
-                    </td>
-                    <td>Sweet potato noodles stir fried with vegetables
+                        <img src="menu-images/soda.jpg" class="menu-pics"/>
                     </td>
                 </tr>
                 <tr>
-                    <td>$5
+                    <td class="menu-title">Soda
                     </td>
-                    <td>$8 &nbsp; &nbsp; Tofu: $9 &nbsp; &nbsp; Beef: $10
+                </tr>
+                <tr>
+                    <td>Coke, Diet Coke, 7-Up, or Ginger Ale
+                    </td>
+                </tr>
+                <tr>
+                    <td>$2.5
                     </td>
                 </tr>
             </table>
@@ -148,6 +143,12 @@
             </ul>
         </div>
         </div>
+
+        <script>
+            window.onload = updateImageSize();
+            window.onresize = updateImageSize();
+        </script>
+
     </body>
 
     <script>
@@ -171,6 +172,7 @@
         window.onload = updateImageSize;
         window.onresize = updateImageSize;
     </script>
+
     <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
 
 </html>

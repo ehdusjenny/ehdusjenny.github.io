@@ -23,6 +23,8 @@
     </head>
 
     <body>
+        <!-- Begin NavBar -->
+
         <ul class="nav">
             <a href="index.html"><div class="logo"><b>HARU HANA</b></div></a>
             <li><a href="contact-us.html"><i class="fa fa-train"></i>INFO</a></li>
@@ -47,6 +49,7 @@
                 </button>
             </div>
         </nav>
+
         <ul class="menu-category" id="myNavbar">
             <span><b>
                 <li><a href="menu.html"><i class="fa fa-caret-right" style="padding-left: 3px"></i>SMALL DISHES</a></li>
@@ -62,65 +65,64 @@
         </ul>
 
         <div id="menu">
-            <div class="title">
-                <b>SMALL DISHES</b>
-                <hr>
-            </div>
-            <table align="center">
-                <tr>
-                    <td>
-                        <img src="menu-images/misosoup.jpg" class="menu-pics"/>
-                    </td>
-                    <td>
-                        <img src="menu-images/dakgangjeong.jpg" class="menu-pics"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="menu-title">Miso Soup
-                    </td>
-                    <td class="menu-title">Dak Gang Jeong
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td>Fried chicken balls in sweet chili sauce
-                    </td>
-                </tr>
-                <tr>
-                    <td>$3
-                    </td>
-                    <td>S: $7 &nbsp; &nbsp; L: $13
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="menu-images/mandutuikim.jpg" class="menu-pics"/>
-                    </td>
-                    <td>
-                        <img src="menu-images/japchae.jpg" class="menu-pics"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="menu-title">Mandu Tuikim
-                    </td>
-                    <td class="menu-title">Japchae
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Fried dumplings - chicken or vegetarian
-                    </td>
-                    <td>Sweet potato noodles stir fried with vegetables
-                    </td>
-                </tr>
-                <tr>
-                    <td>$5
-                    </td>
-                    <td>$8 &nbsp; &nbsp; Tofu: $9 &nbsp; &nbsp; Beef: $10
-                    </td>
-                </tr>
-            </table>
+        <div class='title'>
+            <b>BUN</b>
+            <hr>
+        </div>
+        <table align='center'>
+            <tr>
+                <td>
+                    <img src='menu-images/chickenbun.jpg' class='menu-pics'/>
+                </td>
+                <td>
+                    <img src='menu-images/pulledporkbun.jpg' class='menu-pics'/>
+                </td>
+            </tr>
+            <tr>
+                <td class='menu-title'>Roasted Chicken
+                </td>
+                <td class='menu-title'>Pulled Pork
+                </td>
+            </tr>
+            <tr>
+                <td>Steamed bun with roasted chicken, lettuce, caramelized onions, mayo and homemade teriyaki sauce
+                </td>
+                <td>Steamed bun with pulled pork, homemade barbeque sauce and coleslaw
+                </td>
+            </tr>
+            <tr>
+                <td>$7.5
+                </td>
+                <td>$7.5
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src='menu-images/porkbellybun.jpg' class='menu-pics'/>
+                </td>
+                <td>
+                    <img src='menu-images/shrimpbun.jpg' class='menu-pics'/>
+                </td>
+            </tr>
+            <tr>
+                <td class='menu-title'>Pork Belly
+                </td>
+                <td class='menu-title'>Shrimp
+                </td>
+            </tr>
+            <tr>
+                <td>Steamed bun with pork belly, lettuce, pickles and sweeet ssamjang sauce
+                </td>
+                <td>Steamed bun with shrimp patty, pickles, green onions and spicy mayo
+                </td>
+            </tr>
+            <tr>
+                <td>$8
+                </td>
+                <td>$8
+                </td>
+            </tr>
+        </table>
     </div>
 
         <div class="footer">
@@ -148,6 +150,12 @@
             </ul>
         </div>
         </div>
+
+        <script>
+            window.onload = updateImageSize();
+            window.onresize = updateImageSize();
+        </script>
+
     </body>
 
     <script>
@@ -171,6 +179,7 @@
         window.onload = updateImageSize;
         window.onresize = updateImageSize;
     </script>
+
     <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
 
 </html>
