@@ -1,5 +1,11 @@
+@font-face {
+	font-family: 'BloklettersBalpen';
+	src: url('blokletters_balpen.eot');
+	src: local('Blokletters Balpen Balpen'), local('Blokletters-Balpen'), url('blokletters_balpen.ttf') format('truetype');
+}
+
 body {
-	background: url("background3.jpg") fixed;
+	background: url("background7g.jpg") fixed;
 }
 
 a, a:hover, a:active, a:visited {
@@ -7,7 +13,7 @@ a, a:hover, a:active, a:visited {
 }
 
 .nav {
-	background-color: black;
+	background-color: #ffe6e6;
 	height: 200px;
 	width: 100%;
 	position: relative;
@@ -22,9 +28,9 @@ a, a:hover, a:active, a:visited {
 .logo {
     display: inline-block;
     margin-left: 80px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: white;
-    font-size: 70px;
+    font-family: "BloklettersBalpen", Helvetica, sans-serif;
+    color: black;
+    font-size: 60px;
     text-decoration: none;
 }
 
@@ -38,7 +44,7 @@ a, a:hover, a:active, a:visited {
 .nav li a, .nav li a:visited, .nav li a:link {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 15px;
-	color: white;
+	color: black;
 	margin-right: 50px;
 }
 
@@ -58,8 +64,8 @@ a, a:hover, a:active, a:visited {
 	padding-bottom: 30px;
 	padding-left: 20px;
 	width: 100%;
-	background-color: black;
-	color: white;
+	background-color: #ffe6e6;
+	color: black;
 	border-top: 4px dotted rgba(255, 255, 255, 0.8);
 	font-family: "Audi Type Normal", Verdana, sans-serif;
 }
@@ -72,6 +78,7 @@ a, a:hover, a:active, a:visited {
 
 .social-networks {
 	font-family: 'generica', Helvetica, sans-serif !important;
+	font-weight: bold;
 	float: right; 
 	text-align: center;
 	margin-right: 80px;
@@ -79,16 +86,16 @@ a, a:hover, a:active, a:visited {
 }
 
 .social-networks li a i {
-	color: red;
+	color: #ff0066;
 }
 
 .social-networks li a i:hover {
-	color: white;
+	color: black;
 }
 
 .connect {
 	text-align: center;
-	outline: 2px dotted white;
+	outline: 2px dotted black;
 	outline-offset: 10px;
 	font-size: 20px;
 	margin-left: -18px;
@@ -118,7 +125,7 @@ a, a:hover, a:active, a:visited {
 
 	.nav2 li {
 		display: inline-block;
-		background-color: black;
+		background-color: #ffe6e6;
 		margin: auto;
 		text-align: center;
 		margin-right: 5px;
@@ -128,7 +135,7 @@ a, a:hover, a:active, a:visited {
 	.nav2 li a, .nav2 li a:visited, .nav2 li a:link {
 		font-family: "Trebuchet MS", Helvetica, sans-serif;
 		font-size: 15px;
-		color: white;
+		color: black;
 		padding-right: 10px;
 	}
 
@@ -149,6 +156,10 @@ a, a:hover, a:active, a:visited {
 
 	.footer ul li, .footer ul div li {
 	 	float: none;
+	}
+	
+	.footer {
+		margin-top: 0px;
 	}
 
 	.social-networks li {
@@ -191,7 +202,6 @@ a, a:hover, a:active, a:visited {
 
 	.footer {
 		padding-top: 30px;
-		margin-top: 50px;
 	}
 
 	.connect {
@@ -205,15 +215,16 @@ a, a:hover, a:active, a:visited {
 /*FOR INDEX*/
 
 	.center-piece {
-		width: 930px;
+		width: 940px;
 		margin: 0 auto;
 		margin-top: 100px;
 	}
 
 	.text-block {
-		background-color: black;
-		color: white;
-		width: 460px;
+		border-radius: 25px 0px 0px 25px;
+		background-color: white;
+		color: black;
+		width: 470px;
 		height: 400px;
 		float: left;
 		font-size: 45px;
@@ -223,8 +234,9 @@ a, a:hover, a:active, a:visited {
 	}
 
 	#innovative {
-		color: red;
+		color: #ff0066;
 		font-size: 80px;
+		font-weight: 500;
 	}
 
 	#slideshow {
@@ -235,6 +247,20 @@ a, a:hover, a:active, a:visited {
 	#slideshow img {
 		width: 480px;
 		height: 400px;
+		border-radius: 0px 25px 25px 0px ;
+	}
+
+	#left-slide {
+		left: 470px;
+		height: 400px;
+	}
+
+	#right-slide {
+		height: 400px;
+	}
+
+	#indicator {
+		left: 705px;
 	}
 
 	@media (max-width: 530px) {
@@ -250,25 +276,36 @@ a, a:hover, a:active, a:visited {
 		}
 
 		#innovative {
-			color: red;
 			font-size: 50px;
 			text-align: center;
 		}
 
 		#slideshow {
-			float: none;
+			width: 100%;
 		}
 
-		#slides {
-			width: 280px;
-			height: 280px;
-			margin: auto;
+		#myCarousel {
+			margin: 0 auto;
 		}
 
-		#slides img {
+		#slideshow img {
 			width: 300px;
-			height: 300px;
+			height: 280px;
+			margin: 0 auto;
 		}
+
+		#indicator {
+			visibility: hidden;
+		}
+
+		#left-slide {
+			visibility: hidden;
+		}
+
+		#right-slide {
+			visibility: hidden;
+		}
+
 	}
 
 	@media (max-width: 950px) {
@@ -281,6 +318,29 @@ a, a:hover, a:active, a:visited {
 		#slides {
 			padding-top: 30px;
 		}
+
+		#slideshow img {
+			border-radius: 0px 0px 25px 25px ;
+		}
+
+		.text-block {
+			border-radius: 25px 25px 0px 0px;
+		}
+
+		#indicator {
+			left: 235px;
+		}
+
+		#left-slide {
+			left: 0px;
+			margin-top: 400px;
+		}
+
+		#right-slide {
+			right: -10px;
+			margin-top: 400px;
+		}
+
 	}
 
 /* END OF INDEX */
