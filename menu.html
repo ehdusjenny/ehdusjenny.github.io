@@ -20,6 +20,7 @@
         <link rel="stylesheet" type="text/css" href="custom.css"/>
 
         <script type="text/javascript" src="jquery-latest.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -47,7 +48,7 @@
                 </button>
             </div>
         </nav>
-        <ul class="menu-category" id="myNavbar">
+        <ul class="menu-category" id="myNavbar"  data-spy="affix" data-offset-top="200">
             <span><b>
                 <li><a href="menu.html"><i class="fa fa-caret-right" style="padding-left: 3px"></i>SMALL DISHES</a></li>
                 <li><a href="jeon.html"><i class="fa fa-caret-right"></i>JEON</a></li>
@@ -154,14 +155,17 @@
     <script>
         function updateImageSize() {
             var list = document.getElementsByClassName("menu-pics");
-            if (window.innerWidth > 1300) {
+            if (window.innerWidth > 1700) {
+                size = window.innerWidth/3 - 450 + "px";
+            }
+            else if (window.innerWidth > 1000) {
                 size = window.innerWidth/3 - 250 + "px";
             }
             else if (window.innerWidth > 600) {
                 size = window.innerWidth/3 - 100 + "px";
             }
             else {
-                size = window.innerWidth/3 - 10 + "px";
+                size = window.innerWidth/3 - 20 + "px";
             }
             for (i = 0; i < list.length; i++) {
                 list[i].style.width = size;

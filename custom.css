@@ -384,6 +384,12 @@ a, a:hover, a:active, a:visited {
 		color: red;
 	}
 
+	.affix {
+		text-align: center;
+		margin-left: 315px;
+		margin-top: -201px;
+	}
+
 	#menu {
 		text-align: center;
 		background-color: white;
@@ -435,11 +441,6 @@ a, a:hover, a:active, a:visited {
 		width: 500px;
 	}
 
-	.menu-pics {
-		height: 310px;
-		width: 300px;
-	}
-
 	.menu-title {
 		font-size: 19px;
 		font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -452,6 +453,11 @@ a, a:hover, a:active, a:visited {
 	@media (max-width: 950px) {
 		.menu-category {
 			margin-top: 15px;
+		}
+
+		.affix {
+			margin-top: -155px;
+			margin-left: 10px;
 		}
 
 		.menu-category span {

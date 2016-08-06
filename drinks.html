@@ -76,6 +76,7 @@
                         <img src="menu-images/yujacha.jpg" class="menu-pics"/>
                     </td>
                     <td>
+                        <img src="menu-images/greentealemonade.jpg" class="menu-pics"/>
                     </td>
                 </tr>
                 <tr>
@@ -153,14 +154,17 @@
     <script>
         function updateImageSize() {
             var list = document.getElementsByClassName("menu-pics");
-            if (window.innerWidth > 1300) {
+            if (window.innerWidth > 1700) {
+                size = window.innerWidth/3 - 450 + "px";
+            }
+            else if (window.innerWidth > 1000) {
                 size = window.innerWidth/3 - 250 + "px";
             }
             else if (window.innerWidth > 600) {
                 size = window.innerWidth/3 - 100 + "px";
             }
             else {
-                size = window.innerWidth/3 - 10 + "px";
+                size = window.innerWidth/3 - 20 + "px";
             }
             for (i = 0; i < list.length; i++) {
                 list[i].style.width = size;
