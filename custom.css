@@ -5,7 +5,10 @@
 }
 
 body {
-	background: url("background7g.jpg") fixed;
+	background-image: url("menu-images/assembly.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 a, a:hover, a:active, a:visited {
