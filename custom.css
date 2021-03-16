@@ -442,6 +442,12 @@ a, a:hover, a:active, a:visited {
 		width: 500px;
 	}
 
+	#menu table td.description {
+		padding-left: 100px;
+		padding-right: 100px;
+		text-align: left;
+	}
+
 	.menu-title {
 		font-size: 19px;
 		font-family: "Trebuchet MS", Helvetica, sans-serif;
