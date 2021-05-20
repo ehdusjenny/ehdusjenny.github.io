@@ -20,29 +20,6 @@
     <link rel="stylesheet" type="text/css" href="custom.css"/>
 
     <script type="text/javascript" src="jquery-latest.js"></script>
-    <script>
-        function updateImageSize() {
-            var list = document.getElementsByClassName("menu-pics");
-            if (window.innerWidth > 1700) {
-                size = window.innerWidth/3 - 450 + "px";
-            }
-            else if (window.innerWidth > 1000) {
-                size = window.innerWidth/3 - 250 + "px";
-            }
-            else if (window.innerWidth > 600) {
-                size = window.innerWidth/3 - 100 + "px";
-            }
-            else {
-                size = window.innerWidth/3 - 20 + "px";
-            }
-            for (i = 0; i < list.length; i++) {
-                list[i].style.height = size;
-            }
-        };
-
-        window.onload = updateImageSize;
-        window.onresize = updateImageSize;
-    </script>
 </head>
 
 <body>
@@ -97,38 +74,63 @@
             <b>UDON</b>
             <hr style='margin-bottom: 3px'>
         </div>
-        <table align='center'>
-            <tr>
-                <td class='menu-title'>Kimchi et Kimchi Tempura Udon <br> Kimchi and Kimchi Tempura Udon
-                </td>
-                <td class='menu-title'>Végé Tempura Udon <br> Veggie Tempura Udon
-                </td>
-            </tr>
-            <tr>
-                <td>$9
-                </td>
-                <td>$9
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td class='menu-title'>Poulet Katsu Udon <br> Chicken Katsu Udon
-                </td>
-                <td class='menu-title'>Porc Katsu Udon <br> Pork Katsu Udon
-                </td>
-                <td class='menu-title'>Crevette Katsu Udon <br> Shrimp Katsu Udon
-                </td>
-            </tr>
-            <tr>
-                <td>$11
-                </td>
-                <td>$11
-                </td>
-                <td>$11
-                </td>
-            </tr>
-        </table><br>
+        <div class="flex-container">
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Kimchi et Kimchi Tempura Udon <br> Kimchi and Kimchi Tempura Udon
+                </div>
+                <div>
+                    $9
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Végé Tempura Udon <br> Veggie Tempura Udon
+                </div>
+                <div>
+                    $9
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Poulet Katsu Udon <br> Chicken Katsu Udon
+                </div>
+                <div>
+                    $11
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Porc Katsu Udon <br> Pork Katsu Udon
+                </div>
+                <div>
+                    $11
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Crevette Katsu Udon <br> Shrimp Katsu Udon
+                </div>
+                <div>
+                    $11
+                </div>
+                <div class="description">
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -160,12 +162,6 @@
             </ul>
         </div>
     </div>
-
-        <script>
-        window.onload = updateImageSize();
-        window.onresize = updateImageSize();
-
-        </script>
 
     </body>
 

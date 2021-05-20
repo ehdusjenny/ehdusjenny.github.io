@@ -20,30 +20,6 @@
         <link rel="stylesheet" type="text/css" href="custom.css"/>
 
         <script type="text/javascript" src="jquery-latest.js"></script>
-
-        <script>
-            function updateImageSize() {
-                var list = document.getElementsByClassName("menu-pics");
-                if (window.innerWidth > 1700) {
-                    size = window.innerWidth/3 - 450 + "px";
-                }
-                else if (window.innerWidth > 1000) {
-                    size = window.innerWidth/3 - 250 + "px";
-                }
-                else if (window.innerWidth > 600) {
-                    size = window.innerWidth/3 - 100 + "px";
-                }
-                else {
-                    size = window.innerWidth/3 - 20 + "px";
-                }
-                for (i = 0; i < list.length; i++) {
-                    list[i].style.height = size;
-                }
-            };
-    
-            window.onload = updateImageSize;
-            window.onresize = updateImageSize;
-        </script>
     </head>
 
     <body>
@@ -102,44 +78,41 @@
             </div>
             Servi avec cornichons <br> Served with pickles
             <br>
-            <table align='center'>
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-                <tr>
-                    <td class='menu-title'>Porc & Kimchi Riz Frit <br> Pork & Kimchi Fried Rice
-                    </td>
-                    <td class='menu-title'>Kimchi Riz Frit + Raviolis Végé + Oeuf Frit <br> Kimchi Fried Rice + Veggie Dumplings + Fried Egg
-                    </td>
-                </tr>
-                <tr>
-                    <td>$10.99
-                    </td>
-                    <td>$8.99
-                    </td>
-                </tr>
-            </table><br>
-            <table align='center'>
-                <tr>
-                    <td>
-                    </td>
-                </tr>
-                <tr>
-                    <td class='menu-title'>Kimchi Riz Frit + Porc/Poulet Katsu/Crevette Tempura <br> Kimchi Fried Rice + Pork/Chicken Katsu/Shrimp Tempura
-                    </td>
-                </tr>
-                <tr>
-                    <td>$10.99
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                </tr>
-            </table><br>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <img class='menu-pics'/>
+                    <div class="menu-title">
+                        Porc & Kimchi Riz Frit <br> Pork & Kimchi Fried Rice
+                    </div>
+                    <div>
+                        $10.99
+                    </div>
+                    <div class="description">
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <img class='menu-pics'/>
+                    <div class="menu-title">
+                        Kimchi Riz Frit + Raviolis Végé + Oeuf Frit <br> Kimchi Fried Rice + Veggie Dumplings + Fried Egg
+                    </div>
+                    <div>
+                        $8.99
+                    </div>
+                    <div class="description">
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <img class='menu-pics'/>
+                    <div class="menu-title">
+                        Kimchi Riz Frit + Porc/Poulet Katsu/Crevette Tempura <br> Kimchi Fried Rice + Pork/Chicken Katsu/Shrimp Tempura
+                    </div>
+                    <div>
+                        $10.99
+                    </div>
+                    <div class="description">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="footer">
@@ -171,11 +144,6 @@
                 </ul>
             </div>
         </div>
-
-        <script>
-            window.onload = updateImageSize();
-            window.onresize = updateImageSize();
-        </script>
 
     </body>
 

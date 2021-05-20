@@ -20,29 +20,6 @@
         <link rel="stylesheet" type="text/css" href="custom.css"/>
 
         <script type="text/javascript" src="jquery-latest.js"></script>
-        <script>
-            function updateImageSize() {
-                var list = document.getElementsByClassName("menu-pics");
-                if (window.innerWidth > 1700) {
-                    size = window.innerWidth/3 - 450 + "px";
-                }
-                else if (window.innerWidth > 1000) {
-                    size = window.innerWidth/3 - 250 + "px";
-                }
-                else if (window.innerWidth > 600) {
-                    size = window.innerWidth/3 - 100 + "px";
-                }
-                else {
-                    size = window.innerWidth/3 - 20 + "px";
-                }
-                for (i = 0; i < list.length; i++) {
-                    list[i].style.height = size;
-                }
-            };
-    
-            window.onload = updateImageSize;
-            window.onresize = updateImageSize;
-        </script>
     </head>
 
     <body>
@@ -100,80 +77,75 @@
             <hr style='margin-bottom: 3px'>
         </div>
         Gâteaux de riz sautées à la sauce gochujang épicée (sauf pour Beef Bulgogi) <br> Rice cakes stir fried in spicy gochujang sauce (except for Beef Bulgogi)
-        <table align='center'>
-            <tr> 
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Classique <br> Classic
-                </td>
-                <td class='menu-title'>Fromage <br> Cheese
-                </td>
-            </tr>
-            <tr>
-                <td>$8
-                </td>
-                <td>$9
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr> 
-                <td>
-                    <img src='menu-images/cheesekatsutteokbokki.jpg' class='menu-pics'/>
-                </td>
-                <td>
-                    <img src='menu-images/cheesekatsutteokbokki.jpg' class='menu-pics'/>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Poulet Katsu <br> Chicken Katsu
-                </td>
-                <td class='menu-title'>Porc Katsu <br> Pork Katsu
-                </td>
-            </tr>
-            <tr>
-                <td>$11
-                </td>
-                <td>$11
-                </td>
-            </tr>
-            <tr> 
-                <td>Fromage <br> Cheese: +$2
-                </td>
-                <td>Fromage <br> Cheese: +$2
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr> 
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Beef Bulgogi <br> Boeuf Bulgogi
-                </td>
-                <td class='menu-title'>Spécial Maison <br> House Special
-                </td>
-            </tr>
-            <tr>
-                <td>$13
-                </td>
-                <td>$15
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td class="description">Choix de poulet ou porc katsu, raviolis végé frits, oeuf, et tempura patate douce <br><br> Choice of chicken katsu or pork katsu, veggie dumpling, corn dog, and cheese stick
-                </td>
-            </tr>
-        </table><br>
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Classique <br> Classic
+                </div>
+                <div>
+                    $8
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Fromage <br> Cheese
+                </div>
+                <div>
+                    $9
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src='menu-images/cheesekatsutteokbokki.jpg' class='menu-pics'/>
+                <div class="menu-title">
+                    Poulet Katsu <br> Chicken Katsu
+                </div>
+                <div>
+                    $11
+                </div>
+                <div class="description">Fromage <br> Cheese: +$2
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src='menu-images/cheesekatsutteokbokki.jpg' class='menu-pics'/>
+                <div class="menu-title">
+                    Porc Katsu <br> Pork Katsu
+                </div>
+                <div>
+                    $11
+                </div>
+                <div class="description">Fromage <br> Cheese: +$2
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Beef Bulgogi <br> Boeuf Bulgogi
+                </div>
+                <div>
+                    $13
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Spécial Maison <br> House Special
+                </div>
+                <div>
+                    $15
+                </div>
+                <div class="description">Choix de poulet ou porc katsu, raviolis végé frits, oeuf, et tempura patate douce <br><br> Choice of chicken katsu or pork katsu, veggie dumpling, corn dog, and cheese stick
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -205,11 +177,6 @@
             </ul>
         </div>
     </div>
-
-        <script>
-            window.onload = updateImageSize();
-            window.onresize = updateImageSize();
-        </script>
 
     </body>
 

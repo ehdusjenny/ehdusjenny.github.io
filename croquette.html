@@ -21,29 +21,6 @@
 
         <script type="text/javascript" src="jquery-latest.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-        <script>
-            function updateImageSize() {
-                var list = document.getElementsByClassName("menu-pics");
-                if (window.innerWidth > 1700) {
-                    size = window.innerWidth/3 - 450 + "px";
-                }
-                else if (window.innerWidth > 1000) {
-                    size = window.innerWidth/3 - 250 + "px";
-                }
-                else if (window.innerWidth > 600) {
-                    size = window.innerWidth/3 - 100 + "px";
-                }
-                else {
-                    size = window.innerWidth/3 - 20 + "px";
-                }
-                for (i = 0; i < list.length; i++) {
-                    list[i].style.height = size;
-                }
-            };
-
-            window.onload = updateImageSize;
-            window.onresize = updateImageSize;
-        </script>
     </head>
 
     <body>
@@ -96,80 +73,78 @@
                 <b>CROQUETTES</b>
                 <hr style='margin-bottom: 3px'>
             </div>
-            <table align="center">
-                <tr>
-                    <td class="menu-title">Philadelphia Croquette
-                    </td>
-                    <td class="menu-title">Croquette de Pizza au Poulet <br> Chicken Pizza Croquette
-                    </td>
-                </tr>
-                <tr>
-                    <td>$6.99
-                    </td>
-                    <td>$6.99
-                    </td>
-                </tr>
-                <tr>
-                    <td class="description">Grosse croquette de pommes de terre en purée avec du bœuf et du fromage à la crème, un bon mélange inattendu! Servi avec sauce tonkatsu.
+            <div class="flex-container">
+                <div class="flex-item">
+                    <div class="menu-title">
+                        Philadelphia Croquette
+                    </div>
+                    <div>
+                        $6.99
+                    </div>
+                    <div class="description">Grosse croquette de pommes de terre en purée avec du bœuf et du fromage à la crème, un bon mélange inattendu! Servi avec sauce tonkatsu.
                         <br>
                         <br>
                         Big mashed potato croquette with beef and cream cheese, an unexpectedly good mix! Served with tonkatsu sauce.
-                    </td>
-                    <td class="description">Grosse croquette de pommes de terre en purée avec poulet, fromage et sauce tomate, un classique. Servi avec sauce tonkatsu.
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="menu-title">
+                        Croquette de Pizza au Poulet <br> Chicken Pizza Croquette
+                    </div>
+                    <div>
+                        $6.99
+                    </div>
+                    <div class="description">Grosse croquette de pommes de terre en purée avec poulet, fromage et sauce tomate, un classique. Servi avec sauce tonkatsu.
                         <br>
                         <br>
                         Big mashed potato croquette with chicken, cheese and tomato sauce, a classic. Served with tonkatsu sauce.
-                    </td>
-                </tr>
-            </table><br>
-            <table align="center">
-                <tr>
-                    <td class="menu-title">Bibimbap Croquette
-                    </td>
-                </tr>
-                <tr>
-                    <td>$6.99
-                    </td>
-                </tr>
-                <tr>
-                    <td class="description">Votre plat de Bibimbap coréen sain préféré sous forme de croquette! Servi avec sauce tonkatsu.
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="menu-title">
+                        Bibimbap Croquette
+                    </div>
+                    <div>
+                        $6.99
+                    </div>
+                    <div class="description">Votre plat de Bibimbap coréen sain préféré sous forme de croquette! Servi avec sauce tonkatsu.
                         <br>
                         <br>
                         Your favourite healthy Korean Bibimbap dish in a croquette form! Served with tonkatsu sauce.
-                    </td>
-                </tr>
-            </table><br>
-    </div>
-
-    <div class="footer">
-        <div class="smaller-footer">  
-            <ul>    
-                <li><b>LOCATION</b> &nbsp; 912 boul. Maisonneuve East, Montreal, QC
-                    <br>
-                    <br>
-                    <b>TEL</b> &nbsp; 514-903-5005
-                    <br>
-                    <br>
-                    <b>E-MAIL</b> &nbsp; restaurantharuhana@gmail.com</li>
-                    <div class="social-networks">
-                        <div class="connect">CONNECTEZ-VOUS
-                            <br>
-                            AVEC NOUS
-                            <br>
-                            CONNECT WITH
-                            <br>
-                            US FOR UPDATES</div>
-                            <br>
-                            <ul>
-                                <li style="margin-right: 20px; margin-left: -55px"><a href="https://www.facebook.com/restaurantharuhana"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
-                                <li style="margin-right: 20px"><a href="https://twitter.com/haru__hana"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
-                                <li style="margin-right: 10px"><a href="https://instagram.com/restaurantharuhana/"><i class="fa fa-instagram fa-fw fa-2x"></i></a></li>
-                            </ul>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="footer">
+            <div class="smaller-footer">  
+                <ul>    
+                    <li><b>LOCATION</b> &nbsp; 912 boul. Maisonneuve East, Montreal, QC
+                        <br>
+                        <br>
+                        <b>TEL</b> &nbsp; 514-903-5005
+                        <br>
+                        <br>
+                        <b>E-MAIL</b> &nbsp; restaurantharuhana@gmail.com</li>
+                        <div class="social-networks">
+                            <div class="connect">CONNECTEZ-VOUS
+                                <br>
+                                AVEC NOUS
+                                <br>
+                                CONNECT WITH
+                                <br>
+                                US FOR UPDATES</div>
+                                <br>
+                                <ul>
+                                    <li style="margin-right: 20px; margin-left: -55px"><a href="https://www.facebook.com/restaurantharuhana"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
+                                    <li style="margin-right: 20px"><a href="https://twitter.com/haru__hana"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
+                                    <li style="margin-right: 10px"><a href="https://instagram.com/restaurantharuhana/"><i class="fa fa-instagram fa-fw fa-2x"></i></a></li>
+                                </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
 
     <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>

@@ -604,6 +604,38 @@ a, a:hover, a:active, a:visited {
 		}
 	}
 
+	.flex-container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		font-size: 12px;
+	}
+
+	.flex-item {
+		flex-grow: 1;
+    	flex-basis: 0;
+		padding: 10px;
+		margin: 20px;
+		border: 1px dashed black;
+		min-width: 25%;
+	}
+
+	@media (max-width: 950px) {
+		.flex-item {
+			min-width: 90%
+		}
+	}
+
+	.menu-pics {
+		width: 250px;
+	}
+
+	@media (max-width: 950px) {
+		.menu-pics {
+			width: 210px;
+		}
+	}
+
 /* END OF MENU */
 
 /* START OF CONTACT-US*/

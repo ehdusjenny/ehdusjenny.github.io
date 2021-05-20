@@ -20,30 +20,6 @@
         <link rel="stylesheet" type="text/css" href="custom.css"/>
 
         <script type="text/javascript" src="jquery-latest.js"></script>
-
-        <script>
-            function updateImageSize() {
-                var list = document.getElementsByClassName("menu-pics");
-                if (window.innerWidth > 1700) {
-                    size = window.innerWidth/3 - 450 + "px";
-                }
-                else if (window.innerWidth > 1000) {
-                    size = window.innerWidth/3 - 250 + "px";
-                }
-                else if (window.innerWidth > 600) {
-                    size = window.innerWidth/3 - 100 + "px";
-                }
-                else {
-                    size = window.innerWidth/3 - 20 + "px";
-                }
-                for (i = 0; i < list.length; i++) {
-                    list[i].style.height = size;
-                }
-            };
-    
-            window.onload = updateImageSize;
-            window.onresize = updateImageSize;
-        </script>
     </head>
 
     <body>
@@ -99,35 +75,20 @@
             <b>BIBIMBAP</b>
             <hr style='margin-bottom: 3px'>
         </div>
-        <table align='center'>
-            <tr>
-                <td>
-                    <img src='menu-images/beefbibimbap.jpg' class='menu-pics'/>
-                </td>
-                <td>
-                    <img src='menu-images/beefbibimbap2.jpg' class='menu-pics'/>
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Bibimbap
-                </td>
-            </tr>
-            <tr>
-                <td>Tofu ou Kimchi: $10 <br> Porc, Boeuf ou Poulet: $11 <br> Tofu or Kimchi: $10 <br> Pork, Beef or Chicken: $11
-                </td>
-            </tr>
-            <tr>
-                <td class="description">
-                    <br>Riz blanc avec légumes assortis et soupe miso <br> White rice with assorted vegetables and miso soup
-                </td>
-            </tr>
-        </table><br>
+        <div class="flex-container">
+            <div class="flex-item">
+                <img src='menu-images/beefbibimbap.jpg' class='menu-pics' style="margin: 5px"/>
+                <img src='menu-images/beefbibimbap2.jpg' class='menu-pics'/>
+                <div class="menu-title">
+                    Bibimbap
+                </div>
+                <div>
+                    Tofu ou Kimchi: $10 <br> Porc, Boeuf ou Poulet: $11 <br> Tofu or Kimchi: $10 <br> Pork, Beef or Chicken: $11
+                </div>
+                <div class="description">Riz blanc avec légumes assortis et soupe miso <br> White rice with assorted vegetables and miso soup
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -159,11 +120,6 @@
             </ul>
         </div>
     </div>
-
-        <script>
-            window.onload = updateImageSize();
-            window.onresize = updateImageSize();
-        </script>
 
     </body>
 

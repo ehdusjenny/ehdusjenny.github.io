@@ -20,29 +20,6 @@
     <link rel="stylesheet" type="text/css" href="custom.css"/>
 
     <script type="text/javascript" src="jquery-latest.js"></script>
-    <script>
-        function updateImageSize() {
-            var list = document.getElementsByClassName("menu-pics");
-            if (window.innerWidth > 1700) {
-                size = window.innerWidth/3 - 450 + "px";
-            }
-            else if (window.innerWidth > 1000) {
-                size = window.innerWidth/3 - 250 + "px";
-            }
-            else if (window.innerWidth > 600) {
-                size = window.innerWidth/3 - 100 + "px";
-            }
-            else {
-                size = window.innerWidth/3 - 20 + "px";
-            }
-            for (i = 0; i < list.length; i++) {
-                list[i].style.height = size;
-            }
-        };
-
-        window.onload = updateImageSize;
-        window.onresize = updateImageSize;
-    </script>
 </head>
 
 <body>
@@ -89,152 +66,140 @@
             <hr style='margin-bottom: 3px'>
         </div>
         Servi avec pommes de terres, légumes et riz <br> Served with potatoes, vegetables, and rice
-        <table align='center'>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    <img src='menu-images/porkkatsucurry.jpg' class='menu-pics'/>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Fromage Porc Croquette Curry <br> Cheese Pork Croquette Curry
-                </td>
-                <td class='menu-title'>Porc Katsu Curry <br> Pork Katsu Curry
-                </td>
-            </tr>
-            <tr>
-                <td>$12
-                </td>
-                <td>$12
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td>
-                    <img src='menu-images/chickenkatsucurry.jpg' class='menu-pics'/>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Poulet Katsu Curry <br> Chicken Katsu Curry
-                </td>
-                <td class='menu-title'>Crevette Tempura Curry <br> Shrimp Tempura Curry
-                </td>
-            </tr>
-            <tr>
-                <td>$12
-                </td>
-                <td>$12
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Korokke Curry
-                </td>
-                <td class='menu-title'>Poulet Sauté Curry <br> Sautéed Chicken Curry
-                </td>
-            </tr>
-            <tr>
-                <td>$10
-                </td>
-                <td>$12
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Boeuf Sauté Curry <br> Sautéed Beef Curry
-                </td>
-                <td class='menu-title'>Crevettes Sauté Curry <br> Sautéed Shrimp Curry
-                </td>
-            </tr>
-            <tr>
-                <td>$12
-                </td>
-                <td>$12
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Boeuf et Poulet Sauté Curry <br> Sautéed Beef & Chicken Curry
-                </td>
-                <td class='menu-title'>Tofu Curry
-                </td>
-            </tr>
-            <tr>
-                <td>$12
-                </td>
-                <td>$10
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Végé Tempura Curry <br> Veggie Tempura Curry
-                </td>
-                <td class='menu-title'>Végé Curry + Oeuf <br> Veggie Curry + Egg
-                </td>
-            </tr>
-            <tr>
-                <td>$10
-                </td>
-                <td>$10
-                </td>
-            </tr>
-        </table><br>
+        <div class="flex-container">
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Fromage Porc Croquette Curry <br> Cheese Pork Croquette Curry
+                </div>
+                <div>
+                    $12
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src='menu-images/porkkatsucurry.jpg' class='menu-pics'/>
+                <div class="menu-title">
+                    Porc Katsu Curry <br> Pork Katsu Curry
+                </div>
+                <div>
+                    $12
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src='menu-images/chickenkatsucurry.jpg' class='menu-pics'/>
+                <div class="menu-title">
+                    Poulet Katsu Curry <br> Chicken Katsu Curry
+                </div>
+                <div>
+                    $12
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Crevette Tempura Curry <br> Shrimp Tempura Curry
+                </div>
+                <div>
+                    $12
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Korokke Curry
+                </div>
+                <div>
+                    $10
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Poulet Sauté Curry <br> Sautéed Chicken Curry
+                </div>
+                <div>
+                    $12
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Boeuf Sauté Curry <br> Sautéed Beef Curry
+                </div>
+                <div>
+                    $12
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Crevettes Sauté Curry <br> Sautéed Shrimp Curry
+                </div>
+                <div>
+                    $12
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Boeuf et Poulet Sauté Curry <br> Sautéed Beef & Chicken Curry
+                </div>
+                <div>
+                    $12
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Tofu Curry
+                </div>
+                <div>
+                    $10
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Végé Tempura Curry <br> Veggie Tempura Curry
+                </div>
+                <div>
+                    $10
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Végé Curry + Oeuf <br> Veggie Curry + Egg
+                </div>
+                <div>
+                    $10
+                </div>
+                <div class="description">
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -266,12 +231,6 @@
             </ul>
         </div>
     </div>
-
-        <script>
-        window.onload = updateImageSize();
-        window.onresize = updateImageSize();
-
-        </script>
 
     </body>
 

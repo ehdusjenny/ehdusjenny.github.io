@@ -20,29 +20,6 @@
         <link rel="stylesheet" type="text/css" href="custom.css"/>
 
         <script type="text/javascript" src="jquery-latest.js"></script>
-        <script>
-        function updateImageSize() {
-            var list = document.getElementsByClassName("menu-pics");
-            if (window.innerWidth > 1700) {
-                size = window.innerWidth/3 - 450 + "px";
-            }
-            else if (window.innerWidth > 1000) {
-                size = window.innerWidth/3 - 250 + "px";
-            }
-            else if (window.innerWidth > 600) {
-                size = window.innerWidth/3 - 100 + "px";
-            }
-            else {
-                size = window.innerWidth/3 - 20 + "px";
-            }
-            for (i = 0; i < list.length; i++) {
-                list[i].style.height = size;
-            }
-        };
-
-        window.onload = updateImageSize;
-        window.onresize = updateImageSize;
-    </script>
     </head>
 
     <body>
@@ -98,95 +75,81 @@
             <b>BOL DE RIZ <br> RICE BOWLS</b>
             <hr style='margin-bottom: 3px'>
         </div>
-        <table align='center'>
-            <tr>
-                <td>
-                    <img src='menu-images/spicyporkbowl.jpg' class='menu-pics'/>
-                </td>
-                <td>
-                    <img src='menu-images/porkkatsudon.jpg' class='menu-pics'/>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Porc Épicé <br> Spicy Pork
-                </td>
-                <td class='menu-title'>Porc Katsudon <br> Pork Katsudon
-                </td>
-            </tr>
-            <tr>
-                <td>$10.5
-                </td>
-                <td>$11.5
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Bulgogi Beouf <br> Bulgogi Beef
-                </td>
-                <td class='menu-title'>Boeuf Gyudon <br> Beef Gyudon
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>$13
-                </td>
-                <td>$13
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Poulet Teriyaki <br> Chicken Teriyaki
-                </td>
-                <td class='menu-title'>Poulet Épicé <br> Spicy Chicken
-                </td>
-            </tr>
-            <tr>
-                <td>$11
-                </td>
-                <td>$11
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td>
-                    <img src='menu-images/katsudon.jpg' class='menu-pics'/>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Poulet Katsudon <br> Chicken Katsudon
-                </td>
-                <td class='menu-title'>Poulet et Oeuf <br> Chicken and Egg
-                </td>
-            </tr>
-            <tr>
-                <td>$11.5
-                </td>
-                <td>$11
-                </td>
-            </tr>
-        </table><br>
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <img src='menu-images/spicyporkbowl.jpg' class='menu-pics'/>
+                <div class="menu-title">
+                    Porc Épicé <br> Spicy Pork
+                </div>
+                <div>
+                    $10.5
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src='menu-images/porkkatsudon.jpg' class='menu-pics'/>
+                <div class="menu-title">
+                    Porc Katsudon <br> Pork Katsudon
+                </div>
+                <div>
+                    $11.5
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Bulgogi Beouf <br> Bulgogi Beef
+                </div>
+                <div>
+                    $13
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Boeuf Gyudon <br> Beef Gyudon
+                </div>
+                <div>
+                    $13
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Poulet Teriyaki <br> Chicken Teriyaki
+                </div>
+                <div>
+                    $11
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Poulet Épicé <br> Spicy Chicken
+                </div>
+                <div>
+                    $11
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src='menu-images/katsudon.jpg' class='menu-pics'/>
+                <div class="menu-title">
+                    Poulet Katsudon <br> Chicken Katsudon
+                </div>
+                <div>
+                    $11.5
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Poulet et Oeuf <br> Chicken and Egg
+                </div>
+                <div>
+                    $11
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -218,11 +181,6 @@
             </ul>
         </div>
     </div>
-
-        <script>
-            window.onload = updateImageSize();
-            window.onresize = updateImageSize();
-        </script>
 
     </body>
 

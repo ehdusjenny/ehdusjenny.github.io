@@ -20,30 +20,6 @@
     <link rel="stylesheet" type="text/css" href="custom.css"/>
 
     <script type="text/javascript" src="jquery-latest.js"></script>
-
-    <script>
-        function updateImageSize() {
-            var list = document.getElementsByClassName("menu-pics");
-            if (window.innerWidth > 1700) {
-                size = window.innerWidth/3 - 450 + "px";
-            }
-            else if (window.innerWidth > 1000) {
-                size = window.innerWidth/3 - 250 + "px";
-            }
-            else if (window.innerWidth > 600) {
-                size = window.innerWidth/3 - 100 + "px";
-            }
-            else {
-                size = window.innerWidth/3 - 20 + "px";
-            }
-            for (i = 0; i < list.length; i++) {
-                list[i].style.height = size;
-            }
-        };
-
-        window.onload = updateImageSize;
-        window.onresize = updateImageSize;
-    </script>
 </head>
 
 <body>
@@ -103,114 +79,118 @@
             <b>Ramen Coréen <br> Korean Ramen</b>
             <hr>
         </div>
-        <table align='center'>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Szechuan Ramen (Pas de Bouillon / Dry Ramen)
-                </td>
-                <td class='menu-title'>Ramen Anti Gueule-de-Bois <br> Hangover Cure Ramen
-                </td>
-            </tr>
-            <tr>
-                <td>$11
-                </td>
-                <td>$12
-                </td>
-            </tr>
-            <tr>
-                <td class='description'>Ramen avec noix de cajou confites, porc haché, oignon et poivre <br> Ramen with candied cashews, ground pork, onion, and pepper
-                </td>
-                <td class='description'>Avec crevettes, calamars, palourdes, et moules <br> With shrimp, calamari, clams and mussels
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    <img src='menu-images/kimchiporkramen.jpg' class='menu-pics'/>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Original Ramen avec un oeuf <br> Original Ramen with an egg
-                </td>
-                <td class='menu-title'>Kimchi et Porc Ramen <br> Kimchi and Pork Ramen
-                </td>
-            </tr>
-            <tr>
-                <td>$7
-                </td>
-                <td>$10
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td>
-                    <img src='menu-images/budaeramen.jpg' class='menu-pics'/>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td class='menu-title'>Budae Jjigae Ramen
-                </td>
-                <td class='menu-title'>Kimchi et Kimchi Tempura Ramen <br> Kimchi and Kimchi Tempura Ramen
-                </td>
-            </tr>
-            <tr>
-                <td>$10
-                </td>
-                <td>$9
-                </td>
-            </tr>
-            <tr>
-                <td class="description">With spam, sausages, rice cakes, tofu and bacon
-                </td>
-                <td>
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td class='menu-title'>Poulet Katsu Ramen <br> Chicken Katsu Ramen
-                </td>
-                <td class='menu-title'>Boeuf Katsu Ramen <br> Beef Katsu Ramen
-                </td>
-            </tr>
-            <tr>
-                <td>$10
-                </td>
-                <td>$10
-                </td>
-            </tr>
-        </table><br>
-        <table align='center'>
-            <tr>
-                <td class='menu-title'>Sautéed Beef Ramen <br> Beouf Sauté Ramen
-                </td>
-                <td class='menu-title'>Sautéed Chicken Ramen <br> Poulet Sauté Ramen
-                </td>
-            </tr>
-            <tr>
-                <td>$10
-                </td>
-                <td>$10
-                </td>
-            </tr>
-        </table><br>
+        <div class="flex-container">
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Szechuan Ramen (Pas de Bouillon / Dry Ramen)
+                </div>
+                <div>
+                    $11
+                </div>
+                <div class="description">Ramen avec noix de cajou confites, porc haché, oignon et poivre <br> Ramen with candied cashews, ground pork, onion, and pepper
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Ramen Anti Gueule-de-Bois <br> Hangover Cure Ramen
+                </div>
+                <div>
+                    $12
+                </div>
+                <div class="description">Avec crevettes, calamars, palourdes, et moules <br> With shrimp, calamari, clams and mussels
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Original Ramen avec un oeuf <br> Original Ramen with an egg
+                </div>
+                <div>
+                    $7
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src='menu-images/kimchiporkramen.jpg' class='menu-pics'/>
+                <div class="menu-title">
+                    Kimchi et Porc Ramen <br> Kimchi and Pork Ramen
+                </div>
+                <div>
+                    $10
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src='menu-images/budaeramen.jpg' class='menu-pics'/>
+                <div class="menu-title">
+                    Budae Jjigae Ramen
+                </div>
+                <div>
+                    $10
+                </div>
+                <div class="description">With spam, sausages, rice cakes, tofu and bacon
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Kimchi et Kimchi Tempura Ramen <br> Kimchi and Kimchi Tempura Ramen
+                </div>
+                <div>
+                    $9
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Poulet Katsu Ramen <br> Chicken Katsu Ramen
+                </div>
+                <div>
+                    $10
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Boeuf Katsu Ramen <br> Beef Katsu Ramen
+                </div>
+                <div>
+                    $10
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Sautéed Beef Ramen <br> Beouf Sauté Ramen
+                </div>
+                <div>
+                    $10
+                </div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="flex-item">
+                <img class='menu-pics'/>
+                <div class="menu-title">
+                    Sautéed Chicken Ramen <br> Poulet Sauté Ramen
+                </div>
+                <div>
+                    $10
+                </div>
+                <div class="description">
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -242,12 +222,6 @@
             </ul>
         </div>
     </div>
-
-        <script>
-        window.onload = updateImageSize();
-        window.onresize = updateImageSize();
-
-        </script>
 
     </body>
 
